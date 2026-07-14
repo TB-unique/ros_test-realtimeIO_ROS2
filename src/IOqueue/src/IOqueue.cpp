@@ -159,23 +159,13 @@ IOqueue::~IOqueue()
 void IOqueue::rosTopic_to_write_queue(
   const main_interface::msg::ByteRow::SharedPtr msg)
 {
-  // LoopbackNode 可能聚合多条行数据为一个巨大 ByteRow，需要分片写入
-  const uint8_t * src = msg->data.data();
-  std::size_t remaining = msg->data.size();
+  QueueSlot slot;
+  slot.size = std::min(msg->data.size(), MAX_MSG_SIZE);
+  std::memcpy(slot.data.data(), msg->data.data(), slot.size);
 
-  while (remaining > 0) {
-    QueueSlot slot;
-    slot.size = std::min(remaining, MAX_MSG_SIZE);
-    std::memcpy(slot.data.data(), src, slot.size);
-
-    if (!write_queue_.try_push(slot)) {
-      RCLCPP_WARN_THROTTLE(get_logger(), *get_clock(), 1000,
-                           "Write queue full, dropping data");
-      return;  // 队列满则丢弃剩余分片
-    }
-
-    src += slot.size;
-    remaining -= slot.size;
+  if (!write_queue_.try_push(slot)) {
+    RCLCPP_WARN_THROTTLE(get_logger(), *get_clock(), 1000,
+                         "Write queue full, dropping data");
   }
 }
 

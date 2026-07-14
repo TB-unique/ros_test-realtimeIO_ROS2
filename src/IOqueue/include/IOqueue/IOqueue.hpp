@@ -9,15 +9,15 @@
 #include <fstream>
 #include <string>
 
-// 单条消息最大字节数（read_queue 读 IO 只有 1~4096 字节/条，
-// write_queue 接收 LoopbackNode 聚合数据，通过分片处理大消息）
-constexpr std::size_t MAX_MSG_SIZE = 64 * 1024;  // 64KB
+// 单条消息最大字节数（实际 IO 每次读 1~4096，环路回传聚合后最大一般不超过几 MB，
+// 但队列槽位不宜过大否则内存爆炸。write_queue 接收的是 LoopbackNode 聚合后的整包数据，
+// 需要能容纳一次批处理的所有行，按 200MB 文件 / 255 批 ≈ 820KB 估算，设 512KB 足够）
+constexpr std::size_t MAX_MSG_SIZE = 1024 * 1024;  // 1MB
 
 // 队列容量（必须是2的幂）
-// 读队列：缓冲 ~20ms 生产数据（50kHz × 20ms = 1000 条）
-// 写队列：缓冲 LoopbackNode 聚合后的分片数据
-constexpr std::size_t READ_QUEUE_SIZE = 1024;
-constexpr std::size_t WRITE_QUEUE_SIZE = 1024;
+// 200MB 文件按平均 2KB 每次读取约 100K 条，消费者 2ms 周期处理，需要足够缓冲
+constexpr std::size_t READ_QUEUE_SIZE = 512;
+constexpr std::size_t WRITE_QUEUE_SIZE = 512;
 
 // 用于 ringbuffer 的固定大小存储单元（trivially copyable）
 struct alignas(64) QueueSlot
