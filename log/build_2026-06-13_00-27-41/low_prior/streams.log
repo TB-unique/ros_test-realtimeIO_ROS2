@@ -1,0 +1,30 @@
+[0.109s] Invoking command in '/home/unique/ros2_ws/ros_test/build/low_prior': AMENT_PREFIX_PATH=/home/unique/ros2_ws/ros_test/install/realtime_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/unique/ros2_ws/ros_test/install/realtime_common:/opt/ros/humble /usr/bin/cmake --build /home/unique/ros2_ws/ros_test/build/low_prior -- -j8 -l8
+[0.170s] Consolidate compiler generated dependencies of target low_prior
+[0.186s] [ 50%] Building CXX object CMakeFiles/low_prior.dir/src/low_prior.cpp.o
+[9.751s] [100%] Linking CXX shared library liblow_prior.so
+[10.342s] [100%] Built target low_prior
+[10.373s] Invoked command in '/home/unique/ros2_ws/ros_test/build/low_prior' returned '0': AMENT_PREFIX_PATH=/home/unique/ros2_ws/ros_test/install/realtime_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/unique/ros2_ws/ros_test/install/realtime_common:/opt/ros/humble /usr/bin/cmake --build /home/unique/ros2_ws/ros_test/build/low_prior -- -j8 -l8
+[10.374s] Invoking command in '/home/unique/ros2_ws/ros_test/build/low_prior': AMENT_PREFIX_PATH=/home/unique/ros2_ws/ros_test/install/realtime_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/unique/ros2_ws/ros_test/install/realtime_common:/opt/ros/humble /usr/bin/cmake --install /home/unique/ros2_ws/ros_test/build/low_prior
+[10.382s] -- Install configuration: ""
+[10.382s] -- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/include
+[10.382s] -- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/include/low_prior
+[10.383s] -- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/include/low_prior/low_prior.hpp
+[10.383s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/lib/liblow_prior.so
+[10.396s] -- Set runtime path of "/home/unique/ros2_ws/ros_test/install/low_prior/lib/liblow_prior.so" to ""
+[10.397s] -- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/ament_index/resource_index/package_run_dependencies/low_prior
+[10.397s] -- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/ament_index/resource_index/parent_prefix_path/low_prior
+[10.397s] -- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/environment/ament_prefix_path.sh
+[10.398s] -- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/environment/ament_prefix_path.dsv
+[10.398s] -- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/environment/path.sh
+[10.398s] -- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/environment/path.dsv
+[10.398s] -- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/local_setup.bash
+[10.398s] -- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/local_setup.sh
+[10.399s] -- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/local_setup.zsh
+[10.399s] -- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/local_setup.dsv
+[10.399s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/package.dsv
+[10.399s] -- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/ament_index/resource_index/packages/low_prior
+[10.399s] -- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/ament_index/resource_index/rclcpp_components/low_prior
+[10.400s] -- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/cmake/low_priorConfig.cmake
+[10.400s] -- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/cmake/low_priorConfig-version.cmake
+[10.400s] -- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/package.xml
+[10.422s] Invoked command in '/home/unique/ros2_ws/ros_test/build/low_prior' returned '0': AMENT_PREFIX_PATH=/home/unique/ros2_ws/ros_test/install/realtime_common:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/unique/ros2_ws/ros_test/install/realtime_common:/opt/ros/humble /usr/bin/cmake --install /home/unique/ros2_ws/ros_test/build/low_prior

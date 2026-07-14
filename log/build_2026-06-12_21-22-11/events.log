@@ -1,0 +1,5 @@
+[0.000000] (-) TimerEvent: {}
+[0.000672] (-) JobUnselected: {'identifier': 'high_prior'}
+[0.000791] (-) JobUnselected: {'identifier': 'low_prior'}
+[0.000877] (-) JobUnselected: {'identifier': 'realtime_common'}
+[0.001480] (-) EventReactorShutdown: {}

@@ -1,0 +1,4 @@
+source;share/IOqueue/local_setup.bash
+source;share/IOqueue/local_setup.dsv
+source;share/IOqueue/local_setup.sh
+source;share/IOqueue/local_setup.zsh

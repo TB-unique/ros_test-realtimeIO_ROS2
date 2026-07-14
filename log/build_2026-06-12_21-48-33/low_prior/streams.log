@@ -1,0 +1,35 @@
+[0.041s] Invoking command in '/home/unique/ros2_ws/ros_test/build/low_prior': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble /usr/bin/cmake --build /home/unique/ros2_ws/ros_test/build/low_prior -- -j8 -l8
+[0.198s] [ 50%] [32mBuilding CXX object CMakeFiles/low_prior.dir/src/low_prior.cpp.o[0m
+[4.447s] [01m[K/home/unique/ros2_ws/ros_test/src/low_prior/src/low_prior.cpp:4:1:[m[K [01;31m[Kerror: [m[K‘[01m[KLowPrior[m[K’ does not name a type
+[4.447s]     4 | [01;31m[KLowPrior[m[K::LowPrior(const rclcpp::NodeOptions & options)
+[4.447s]       | [01;31m[K^~~~~~~~[m[K
+[4.481s] In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+[4.481s]                  from [01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/register_node_macro.hpp:18[m[K,
+[4.481s]                  from [01m[K/home/unique/ros2_ws/ros_test/src/low_prior/src/low_prior.cpp:44[m[K:
+[4.481s] [01m[K/home/unique/ros2_ws/ros_test/src/low_prior/src/low_prior.cpp:45:33:[m[K [01;31m[Kerror: [m[K‘[01m[KLowPrior[m[K’ was not declared in this scope; did you mean ‘[01m[Klow_prior::LowPrior[m[K’?
+[4.481s]    45 | RCLCPP_COMPONENTS_REGISTER_NODE([01;31m[KLowPrior[m[K)
+[4.481s]       |                                 [01;31m[K^~~~~~~~[m[K
+[4.481s] In file included from [01m[K/home/unique/ros2_ws/ros_test/src/low_prior/src/low_prior.cpp:1[m[K:
+[4.482s] [01m[K/home/unique/ros2_ws/ros_test/src/low_prior/include/low_prior/low_prior.hpp:10:7:[m[K [01;36m[Knote: [m[K‘[01m[Klow_prior::LowPrior[m[K’ declared here
+[4.482s]    10 | class [01;36m[KLowPrior[m[K : public rclcpp::Node
+[4.482s]       |       [01;36m[K^~~~~~~~[m[K
+[4.482s] In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:56[m[K,
+[4.482s]                  from [01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/register_node_macro.hpp:18[m[K,
+[4.482s]                  from [01m[K/home/unique/ros2_ws/ros_test/src/low_prior/src/low_prior.cpp:44[m[K:
+[4.482s] [01m[K/home/unique/ros2_ws/ros_test/src/low_prior/src/low_prior.cpp:45:1:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.482s]    45 | [01;31m[KRCLCPP_COMPONENTS_REGISTER_NODE[m[K(LowPrior)
+[4.482s]       | [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[5.064s] In file included from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp:57[m[K,
+[5.064s]                  from [01m[K/opt/ros/humble/include/class_loader/class_loader/class_loader.hpp:55[m[K,
+[5.064s]                  from [01m[K/opt/ros/humble/include/rclcpp_components/rclcpp_components/register_node_macro.hpp:18[m[K,
+[5.064s]                  from [01m[K/home/unique/ros2_ws/ros_test/src/low_prior/src/low_prior.cpp:44[m[K:
+[5.064s] /opt/ros/humble/include/class_loader/class_loader/meta_object.hpp: In instantiation of ‘[01m[KB* class_loader::impl::MetaObject<C, B>::create() const [with C = int; B = rclcpp_components::NodeFactory][m[K’:
+[5.065s] [01m[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:216:7:[m[K   required from here
+[5.065s] [01m[K/opt/ros/humble/include/class_loader/class_loader/meta_object.hpp:218:12:[m[K [01;31m[Kerror: [m[Kcannot convert ‘[01m[Kint*[m[K’ to ‘[01m[Krclcpp_components::NodeFactory*[m[K’ in return
+[5.065s]   218 |     return [01;31m[Knew C[m[K;
+[5.065s]       |            [01;31m[K^~~~~[m[K
+[5.065s]       |            [01;31m[K|[m[K
+[5.065s]       |            [01;31m[Kint*[m[K
+[5.229s] gmake[2]: *** [CMakeFiles/low_prior.dir/build.make:76: CMakeFiles/low_prior.dir/src/low_prior.cpp.o] Error 1
+[5.230s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/low_prior.dir/all] Error 2
+[5.230s] gmake: *** [Makefile:146: all] Error 2

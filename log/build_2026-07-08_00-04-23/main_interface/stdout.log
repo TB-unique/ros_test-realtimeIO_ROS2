@@ -1,0 +1,23 @@
+[  2%] Built target main_interface__rs
+[ 10%] Built target main_interface__cpp
+[ 15%] Built target main_interface__rosidl_generator_c
+[ 15%] Built target ament_cmake_python_copy_main_interface
+[ 25%] Built target main_interface__rosidl_typesupport_fastrtps_cpp
+[ 35%] Built target main_interface__rosidl_typesupport_introspection_cpp
+[ 45%] Built target main_interface__rosidl_typesupport_cpp
+[ 57%] Built target main_interface__rosidl_typesupport_c
+[ 65%] Built target main_interface__rosidl_typesupport_introspection_c
+[ 75%] Built target main_interface__rosidl_typesupport_fastrtps_c
+[ 75%] Built target main_interface
+[ 77%] Built target main_interface__py
+[ 85%] Built target main_interface__rosidl_generator_py
+[ 90%] Built target main_interface__rosidl_typesupport_fastrtps_c__pyext
+[ 95%] Built target main_interface__rosidl_typesupport_c__pyext
+[100%] Built target main_interface__rosidl_typesupport_introspection_c__pyext
+running egg_info
+writing main_interface.egg-info/PKG-INFO
+writing dependency_links to main_interface.egg-info/dependency_links.txt
+writing top-level names to main_interface.egg-info/top_level.txt
+reading manifest file 'main_interface.egg-info/SOURCES.txt'
+writing manifest file 'main_interface.egg-info/SOURCES.txt'
+[100%] Built target ament_cmake_python_build_main_interface_egg

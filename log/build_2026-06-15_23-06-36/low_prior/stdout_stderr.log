@@ -1,0 +1,11 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/low_prior.dir/src/low_prior.cpp.o[0m
+In file included from [01m[K/home/unique/ros2_ws/ros_test/src/low_prior/src/low_prior.cpp:2[m[K:
+[01m[K/home/unique/ros2_ws/ros_test/install/realtime_common/include/realtime_common/rt_utils.hpp:253:9:[m[K [01;31m[Kerror: [m[Kdeclaration of ‘[01m[KT realtime_common::SPSCQueue<T, Capacity>::Slot::Storage::T[m[K’ shadows template parameter
+  253 |       T [01;31m[KT[m[K;
+      |         [01;31m[K^[m[K
+[01m[K/home/unique/ros2_ws/ros_test/install/realtime_common/include/realtime_common/rt_utils.hpp:62:10:[m[K [01;36m[Knote: [m[Ktemplate parameter ‘[01m[KT[m[K’ declared here
+   62 | template<[01;36m[Ktypename[m[K T, std::size_t Capacity>
+      |          [01;36m[K^~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/low_prior.dir/build.make:76: CMakeFiles/low_prior.dir/src/low_prior.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/low_prior.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

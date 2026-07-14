@@ -1,0 +1,24 @@
+[0.043s] Invoking command in '/home/unique/ros2_ws/ros_test/build/main_interface': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble /usr/bin/cmake --build /home/unique/ros2_ws/ros_test/build/main_interface -- -j8 -l8
+[0.196s] [  2%] Built target main_interface__cpp
+[0.198s] [  5%] Built target main_interface__rs
+[0.219s] [ 15%] Built target main_interface__rosidl_generator_c
+[0.233s] [ 15%] Built target ament_cmake_python_copy_main_interface
+[0.277s] [ 35%] Built target main_interface__rosidl_typesupport_fastrtps_cpp
+[0.277s] [ 35%] Built target main_interface__rosidl_typesupport_fastrtps_c
+[0.280s] [ 45%] Built target main_interface__rosidl_typesupport_cpp
+[0.281s] [ 55%] Built target main_interface__rosidl_typesupport_introspection_cpp
+[0.286s] [ 65%] Built target main_interface__rosidl_typesupport_introspection_c
+[0.301s] [ 75%] Built target main_interface__rosidl_typesupport_c
+[0.352s] [ 75%] Built target main_interface
+[0.399s] [ 77%] Built target main_interface__py
+[0.459s] [ 85%] Built target main_interface__rosidl_generator_py
+[0.507s] [ 92%] Built target main_interface__rosidl_typesupport_c__pyext
+[0.507s] [ 95%] Built target main_interface__rosidl_typesupport_introspection_c__pyext
+[0.530s] [100%] Built target main_interface__rosidl_typesupport_fastrtps_c__pyext
+[0.696s] running egg_info
+[0.699s] writing main_interface.egg-info/PKG-INFO
+[0.699s] writing dependency_links to main_interface.egg-info/dependency_links.txt
+[0.700s] writing top-level names to main_interface.egg-info/top_level.txt
+[0.706s] reading manifest file 'main_interface.egg-info/SOURCES.txt'
+[0.707s] writing manifest file 'main_interface.egg-info/SOURCES.txt'
+[0.787s] [100%] Built target ament_cmake_python_build_main_interface_egg

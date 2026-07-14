@@ -1,0 +1,491 @@
+[0.000000] (-) TimerEvent: {}
+[0.000524] (-) JobUnselected: {'identifier': 'high_prior'}
+[0.000597] (-) JobUnselected: {'identifier': 'low_prior'}
+[0.000647] (-) JobUnselected: {'identifier': 'realtime_common'}
+[0.000823] (-) JobUnselected: {'identifier': 'realtime_launch'}
+[0.000958] (main_interface) JobQueued: {'identifier': 'main_interface', 'dependencies': OrderedDict()}
+[0.001079] (main_interface) JobStarted: {'identifier': 'main_interface'}
+[0.015568] (main_interface) JobProgress: {'identifier': 'main_interface', 'progress': 'cmake'}
+[0.016593] (main_interface) Command: {'cmd': ['/usr/bin/cmake', '/home/unique/ros2_ws/ros_test/src/main_interface', '-DCMAKE_INSTALL_PREFIX=/home/unique/ros2_ws/ros_test/install/main_interface'], 'cwd': '/home/unique/ros2_ws/ros_test/build/main_interface', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unique'), ('GIT_ASKPASS', '/home/unique/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/unique/ros2_ws/ros_test/install/low_prior/lib:/home/unique/ros2_ws/ros_test/install/high_prior/lib:/home/unique/ros2_ws/install/village_interface/lib:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/unique'), ('OLDPWD', '/home/unique/ros2_ws/ros_test/src'), ('TERM_PROGRAM_VERSION', '1.124.2'), ('RUSTUP_UPDATE_ROOT', 'https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-82bae6d9-a570-4d1d-80fe-b5b55c2e6fc2.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/unique/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/unique/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/unique/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('RUSTUP_DIST_SERVER', 'https://mirrors.tuna.tsinghua.edu.cn/rustup'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install:/home/unique/ros2_ws/install:/home/unique/ros2_ws/ros2_21_tutorials/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'unique'), ('NAME', 'TBunique'), ('WSL_INTEROP', '/run/WSL/416_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unique/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/unique/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/unique/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/bin/remote-cli:/home/unique/.local/bin:/home/unique/.cargo/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/d/3VMWare/bin/:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Strawberry/c/bin:/mnt/c/Strawberry/perl/site/bin:/mnt/c/Strawberry/perl/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x86/:/mnt/d/msys64/usr/bin:/mnt/d/msys64/mingw64/bin:/mnt/c/Users/23632/AppData/Local/uv/bin:/mnt/c/Program Files/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/nvm:/mnt/c/Program Files/nodejs:/mnt/d/Program Files/Git/cmd:/mnt/d/Python/Scripts/:/mnt/d/Python/:/mnt/c/Users/23632/.moon/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Users/23632/.cargo/bin:/mnt/c/Users/23632/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/23632/.dotnet/tools:/mnt/d/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64:/mnt/c/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64:/mnt/d/Program Files/Tesseract-OCR:/mnt/c/Users/23632/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/23632/AppData/Local/Programs/Ollama:/mnt/d/Program Files/JetBrains/RustRover 2024.3.7/bin:/mnt/d/3_Flutter/flutter/bin:/mnt/d/Program Files/CodeBuddy CN/bin:/snap/bin:/home/unique/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/unique/.vscode-server/extensions/ms-python.debugpy-2026.6.0/.noConfigDebugAdapterEndpoints/endpoint-025aca6cd74c5f23.txt'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/unique/.vscode-server/data/User/workspaceStorage/508a740a3a18a8afb6b851ff54dfac0e/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2d50286631.sock'), ('TERM_PROGRAM', 'vscode'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('AMENT_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_launch:/home/unique/ros2_ws/ros_test/install/low_prior:/home/unique/ros2_ws/ros_test/install/high_prior:/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/install/village_wang:/home/unique/ros2_ws/install/village_interface:/home/unique/ros2_ws/install/my_cpp_pkg:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_c:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/unique/ros2_ws/ros_test/build/main_interface'), ('COPILOT_DEBUG_NONCE', '5d901767bafdd9f73c7d9e0f0be861af'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unique/ros2_ws/install/village_interface/local/lib/python3.10/dist-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface/local/lib/python3.10/dist-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_launch:/home/unique/ros2_ws/ros_test/install/low_prior:/home/unique/ros2_ws/ros_test/install/high_prior:/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/install/village_wang:/home/unique/ros2_ws/install/village_interface:/home/unique/ros2_ws/install/my_cpp_pkg:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_c:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[0.041517] (main_interface) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.099079] (-) TimerEvent: {}
+[0.197834] (main_interface) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.199188] (-) TimerEvent: {}
+[0.299567] (-) TimerEvent: {}
+[0.400011] (-) TimerEvent: {}
+[0.500616] (-) TimerEvent: {}
+[0.599786] (main_interface) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.600733] (-) TimerEvent: {}
+[0.601752] (main_interface) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.607379] (main_interface) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.617105] (main_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.629450] (main_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.657276] (main_interface) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.658992] (main_interface) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.700928] (-) TimerEvent: {}
+[0.801459] (-) TimerEvent: {}
+[0.901969] (-) TimerEvent: {}
+[1.002604] (-) TimerEvent: {}
+[1.103030] (-) TimerEvent: {}
+[1.203750] (-) TimerEvent: {}
+[1.304253] (-) TimerEvent: {}
+[1.407750] (-) TimerEvent: {}
+[1.508478] (-) TimerEvent: {}
+[1.609619] (-) TimerEvent: {}
+[1.710113] (-) TimerEvent: {}
+[1.810889] (-) TimerEvent: {}
+[1.911684] (-) TimerEvent: {}
+[2.012339] (-) TimerEvent: {}
+[2.112967] (-) TimerEvent: {}
+[2.213500] (-) TimerEvent: {}
+[2.313990] (-) TimerEvent: {}
+[2.414445] (-) TimerEvent: {}
+[2.514920] (-) TimerEvent: {}
+[2.615460] (-) TimerEvent: {}
+[2.716144] (-) TimerEvent: {}
+[2.816889] (-) TimerEvent: {}
+[2.917419] (-) TimerEvent: {}
+[3.018048] (-) TimerEvent: {}
+[3.118600] (-) TimerEvent: {}
+[3.219041] (-) TimerEvent: {}
+[3.319596] (-) TimerEvent: {}
+[3.420259] (-) TimerEvent: {}
+[3.520746] (-) TimerEvent: {}
+[3.621809] (-) TimerEvent: {}
+[3.722391] (-) TimerEvent: {}
+[3.822818] (-) TimerEvent: {}
+[3.923847] (-) TimerEvent: {}
+[4.025116] (-) TimerEvent: {}
+[4.125758] (-) TimerEvent: {}
+[4.226238] (-) TimerEvent: {}
+[4.326756] (-) TimerEvent: {}
+[4.427289] (-) TimerEvent: {}
+[4.527729] (-) TimerEvent: {}
+[4.628189] (-) TimerEvent: {}
+[4.728727] (-) TimerEvent: {}
+[4.829240] (-) TimerEvent: {}
+[4.929709] (-) TimerEvent: {}
+[5.030932] (-) TimerEvent: {}
+[5.131452] (-) TimerEvent: {}
+[5.231968] (-) TimerEvent: {}
+[5.332808] (-) TimerEvent: {}
+[5.433988] (-) TimerEvent: {}
+[5.535959] (-) TimerEvent: {}
+[5.636513] (-) TimerEvent: {}
+[5.738520] (-) TimerEvent: {}
+[5.840593] (-) TimerEvent: {}
+[5.942633] (-) TimerEvent: {}
+[6.044037] (-) TimerEvent: {}
+[6.144623] (-) TimerEvent: {}
+[6.245161] (-) TimerEvent: {}
+[6.345696] (-) TimerEvent: {}
+[6.446265] (-) TimerEvent: {}
+[6.546743] (-) TimerEvent: {}
+[6.647289] (-) TimerEvent: {}
+[6.747861] (-) TimerEvent: {}
+[6.848501] (-) TimerEvent: {}
+[6.949155] (-) TimerEvent: {}
+[7.049705] (-) TimerEvent: {}
+[7.150345] (-) TimerEvent: {}
+[7.250891] (-) TimerEvent: {}
+[7.351334] (-) TimerEvent: {}
+[7.452423] (-) TimerEvent: {}
+[7.553070] (-) TimerEvent: {}
+[7.654190] (-) TimerEvent: {}
+[7.754940] (-) TimerEvent: {}
+[7.855981] (-) TimerEvent: {}
+[7.956848] (-) TimerEvent: {}
+[8.057710] (-) TimerEvent: {}
+[8.158337] (-) TimerEvent: {}
+[8.258769] (-) TimerEvent: {}
+[8.359374] (-) TimerEvent: {}
+[8.460372] (-) TimerEvent: {}
+[8.560883] (-) TimerEvent: {}
+[8.661738] (-) TimerEvent: {}
+[8.762831] (-) TimerEvent: {}
+[8.863828] (-) TimerEvent: {}
+[8.964593] (-) TimerEvent: {}
+[9.065463] (-) TimerEvent: {}
+[9.166241] (-) TimerEvent: {}
+[9.266717] (-) TimerEvent: {}
+[9.367177] (-) TimerEvent: {}
+[9.467721] (-) TimerEvent: {}
+[9.568645] (-) TimerEvent: {}
+[9.669479] (-) TimerEvent: {}
+[9.770062] (-) TimerEvent: {}
+[9.871011] (-) TimerEvent: {}
+[9.971521] (-) TimerEvent: {}
+[10.072380] (-) TimerEvent: {}
+[10.172788] (-) TimerEvent: {}
+[10.273207] (-) TimerEvent: {}
+[10.373873] (-) TimerEvent: {}
+[10.474450] (-) TimerEvent: {}
+[10.575397] (-) TimerEvent: {}
+[10.676174] (-) TimerEvent: {}
+[10.776671] (-) TimerEvent: {}
+[10.877519] (-) TimerEvent: {}
+[10.978023] (-) TimerEvent: {}
+[11.078514] (-) TimerEvent: {}
+[11.178967] (-) TimerEvent: {}
+[11.279413] (-) TimerEvent: {}
+[11.379906] (-) TimerEvent: {}
+[11.480394] (-) TimerEvent: {}
+[11.581015] (-) TimerEvent: {}
+[11.681892] (-) TimerEvent: {}
+[11.782548] (-) TimerEvent: {}
+[11.883176] (-) TimerEvent: {}
+[11.984384] (-) TimerEvent: {}
+[12.084839] (-) TimerEvent: {}
+[12.185314] (-) TimerEvent: {}
+[12.286171] (-) TimerEvent: {}
+[12.387337] (-) TimerEvent: {}
+[12.487924] (-) TimerEvent: {}
+[12.588622] (-) TimerEvent: {}
+[12.689624] (-) TimerEvent: {}
+[12.790144] (-) TimerEvent: {}
+[12.891003] (-) TimerEvent: {}
+[12.991978] (-) TimerEvent: {}
+[13.092553] (-) TimerEvent: {}
+[13.193490] (-) TimerEvent: {}
+[13.294194] (-) TimerEvent: {}
+[13.394796] (-) TimerEvent: {}
+[13.495820] (-) TimerEvent: {}
+[13.596486] (-) TimerEvent: {}
+[13.697004] (-) TimerEvent: {}
+[13.797819] (-) TimerEvent: {}
+[13.898668] (-) TimerEvent: {}
+[13.999416] (-) TimerEvent: {}
+[14.100281] (-) TimerEvent: {}
+[14.201329] (-) TimerEvent: {}
+[14.301953] (-) TimerEvent: {}
+[14.402852] (-) TimerEvent: {}
+[14.503432] (-) TimerEvent: {}
+[14.604138] (-) TimerEvent: {}
+[14.704615] (-) TimerEvent: {}
+[14.761471] (main_interface) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[14.799304] (main_interface) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[14.804837] (-) TimerEvent: {}
+[14.905258] (-) TimerEvent: {}
+[15.005965] (-) TimerEvent: {}
+[15.106727] (-) TimerEvent: {}
+[15.130868] (main_interface) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[15.206919] (-) TimerEvent: {}
+[15.307599] (-) TimerEvent: {}
+[15.408171] (-) TimerEvent: {}
+[15.509097] (-) TimerEvent: {}
+[15.590589] (main_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[15.609385] (-) TimerEvent: {}
+[15.709920] (-) TimerEvent: {}
+[15.768742] (main_interface) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[15.810134] (-) TimerEvent: {}
+[15.910707] (-) TimerEvent: {}
+[16.011241] (-) TimerEvent: {}
+[16.112088] (-) TimerEvent: {}
+[16.188411] (main_interface) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[16.195766] (main_interface) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[16.212568] (-) TimerEvent: {}
+[16.313402] (-) TimerEvent: {}
+[16.414263] (-) TimerEvent: {}
+[16.515301] (-) TimerEvent: {}
+[16.616219] (-) TimerEvent: {}
+[16.717226] (-) TimerEvent: {}
+[16.818106] (-) TimerEvent: {}
+[16.919132] (-) TimerEvent: {}
+[17.020047] (-) TimerEvent: {}
+[17.120896] (-) TimerEvent: {}
+[17.221799] (-) TimerEvent: {}
+[17.322778] (-) TimerEvent: {}
+[17.423658] (-) TimerEvent: {}
+[17.467970] (main_interface) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[17.468366] (main_interface) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[17.468504] (main_interface) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[17.468563] (main_interface) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[17.492833] (main_interface) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[17.524399] (-) TimerEvent: {}
+[17.625579] (-) TimerEvent: {}
+[17.726281] (-) TimerEvent: {}
+[17.776626] (main_interface) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[17.826501] (-) TimerEvent: {}
+[17.858139] (main_interface) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[17.862108] (main_interface) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[17.869245] (main_interface) StdoutLine: {'line': b'-- Configuring done\n'}
+[17.926493] (main_interface) StdoutLine: {'line': b'-- Generating done\n'}
+[17.926762] (-) TimerEvent: {}
+[17.943988] (main_interface) StdoutLine: {'line': b'-- Build files have been written to: /home/unique/ros2_ws/ros_test/build/main_interface\n'}
+[17.958234] (main_interface) CommandEnded: {'returncode': 0}
+[17.961423] (main_interface) JobProgress: {'identifier': 'main_interface', 'progress': 'build'}
+[17.961584] (main_interface) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/unique/ros2_ws/ros_test/build/main_interface', '--', '-j8', '-l8'], 'cwd': '/home/unique/ros2_ws/ros_test/build/main_interface', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unique'), ('GIT_ASKPASS', '/home/unique/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/unique/ros2_ws/ros_test/install/low_prior/lib:/home/unique/ros2_ws/ros_test/install/high_prior/lib:/home/unique/ros2_ws/install/village_interface/lib:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/unique'), ('OLDPWD', '/home/unique/ros2_ws/ros_test/src'), ('TERM_PROGRAM_VERSION', '1.124.2'), ('RUSTUP_UPDATE_ROOT', 'https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-82bae6d9-a570-4d1d-80fe-b5b55c2e6fc2.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/unique/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/unique/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/unique/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('RUSTUP_DIST_SERVER', 'https://mirrors.tuna.tsinghua.edu.cn/rustup'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install:/home/unique/ros2_ws/install:/home/unique/ros2_ws/ros2_21_tutorials/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'unique'), ('NAME', 'TBunique'), ('WSL_INTEROP', '/run/WSL/416_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unique/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/unique/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/unique/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/bin/remote-cli:/home/unique/.local/bin:/home/unique/.cargo/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/d/3VMWare/bin/:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Strawberry/c/bin:/mnt/c/Strawberry/perl/site/bin:/mnt/c/Strawberry/perl/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x86/:/mnt/d/msys64/usr/bin:/mnt/d/msys64/mingw64/bin:/mnt/c/Users/23632/AppData/Local/uv/bin:/mnt/c/Program Files/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/nvm:/mnt/c/Program Files/nodejs:/mnt/d/Program Files/Git/cmd:/mnt/d/Python/Scripts/:/mnt/d/Python/:/mnt/c/Users/23632/.moon/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Users/23632/.cargo/bin:/mnt/c/Users/23632/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/23632/.dotnet/tools:/mnt/d/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64:/mnt/c/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64:/mnt/d/Program Files/Tesseract-OCR:/mnt/c/Users/23632/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/23632/AppData/Local/Programs/Ollama:/mnt/d/Program Files/JetBrains/RustRover 2024.3.7/bin:/mnt/d/3_Flutter/flutter/bin:/mnt/d/Program Files/CodeBuddy CN/bin:/snap/bin:/home/unique/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/unique/.vscode-server/extensions/ms-python.debugpy-2026.6.0/.noConfigDebugAdapterEndpoints/endpoint-025aca6cd74c5f23.txt'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/unique/.vscode-server/data/User/workspaceStorage/508a740a3a18a8afb6b851ff54dfac0e/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2d50286631.sock'), ('TERM_PROGRAM', 'vscode'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('AMENT_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_launch:/home/unique/ros2_ws/ros_test/install/low_prior:/home/unique/ros2_ws/ros_test/install/high_prior:/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/install/village_wang:/home/unique/ros2_ws/install/village_interface:/home/unique/ros2_ws/install/my_cpp_pkg:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_c:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/unique/ros2_ws/ros_test/build/main_interface'), ('COPILOT_DEBUG_NONCE', '5d901767bafdd9f73c7d9e0f0be861af'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unique/ros2_ws/install/village_interface/local/lib/python3.10/dist-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface/local/lib/python3.10/dist-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_launch:/home/unique/ros2_ws/ros_test/install/low_prior:/home/unique/ros2_ws/ros_test/install/high_prior:/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/install/village_wang:/home/unique/ros2_ws/install/village_interface:/home/unique/ros2_ws/install/my_cpp_pkg:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_c:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[18.014564] (main_interface) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[18.026966] (-) TimerEvent: {}
+[18.029326] (main_interface) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating Rust code for ROS interfaces\x1b[0m\n'}
+[18.029620] (main_interface) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[18.043145] (main_interface) StdoutLine: {'line': b'[  7%] Built target ament_cmake_python_copy_main_interface\n'}
+[18.127152] (-) TimerEvent: {}
+[18.227647] (-) TimerEvent: {}
+[18.329497] (-) TimerEvent: {}
+[18.389971] (main_interface) StdoutLine: {'line': b'[  7%] Built target main_interface__rs\n'}
+[18.431647] (-) TimerEvent: {}
+[18.459917] (main_interface) StdoutLine: {'line': b'running egg_info\n'}
+[18.463123] (main_interface) StdoutLine: {'line': b'creating main_interface.egg-info\n'}
+[18.463434] (main_interface) StdoutLine: {'line': b'writing main_interface.egg-info/PKG-INFO\n'}
+[18.463564] (main_interface) StdoutLine: {'line': b'writing dependency_links to main_interface.egg-info/dependency_links.txt\n'}
+[18.463646] (main_interface) StdoutLine: {'line': b'writing top-level names to main_interface.egg-info/top_level.txt\n'}
+[18.463717] (main_interface) StdoutLine: {'line': b"writing manifest file 'main_interface.egg-info/SOURCES.txt'\n"}
+[18.468276] (main_interface) StdoutLine: {'line': b"reading manifest file 'main_interface.egg-info/SOURCES.txt'\n"}
+[18.468701] (main_interface) StdoutLine: {'line': b"writing manifest file 'main_interface.egg-info/SOURCES.txt'\n"}
+[18.478831] (main_interface) StdoutLine: {'line': b'[  7%] Built target main_interface__cpp\n'}
+[18.494955] (main_interface) StdoutLine: {'line': b'[ 17%] \x1b[32mBuilding C object CMakeFiles/main_interface__rosidl_generator_c.dir/rosidl_generator_c/main_interface/msg/detail/byte_row__functions.c.o\x1b[0m\n'}
+[18.497375] (main_interface) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[18.497666] (main_interface) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding C object CMakeFiles/main_interface__rosidl_generator_c.dir/rosidl_generator_c/main_interface/msg/detail/byte_rows__functions.c.o\x1b[0m\n'}
+[18.497786] (main_interface) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[18.497899] (main_interface) StdoutLine: {'line': b'[ 20%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[18.519876] (main_interface) StdoutLine: {'line': b'[ 20%] Built target ament_cmake_python_build_main_interface_egg\n'}
+[18.531844] (-) TimerEvent: {}
+[18.597387] (main_interface) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libmain_interface__rosidl_generator_c.so\x1b[0m\n'}
+[18.632027] (-) TimerEvent: {}
+[18.732464] (-) TimerEvent: {}
+[18.816395] (main_interface) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/main_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/main_interface/msg/byte_row__type_support.cpp.o\x1b[0m\n'}
+[18.816770] (main_interface) StdoutLine: {'line': b'[ 27%] \x1b[32mBuilding CXX object CMakeFiles/main_interface__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/main_interface/msg/byte_rows__type_support.cpp.o\x1b[0m\n'}
+[18.834709] (-) TimerEvent: {}
+[18.873302] (main_interface) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/main_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/main_interface/msg/detail/byte_rows__type_support.cpp.o\x1b[0m\n'}
+[18.876829] (main_interface) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/main_interface__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/main_interface/msg/detail/byte_row__type_support.cpp.o\x1b[0m\n'}
+[18.883792] (main_interface) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/main_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/main_interface/msg/detail/dds_fastrtps/byte_row__type_support.cpp.o\x1b[0m\n'}
+[18.888340] (main_interface) StdoutLine: {'line': b'[ 37%] \x1b[32mBuilding CXX object CMakeFiles/main_interface__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/main_interface/msg/detail/dds_fastrtps/byte_rows__type_support.cpp.o\x1b[0m\n'}
+[18.937716] (-) TimerEvent: {}
+[19.032977] (main_interface) StdoutLine: {'line': b'[ 37%] Built target main_interface__rosidl_generator_c\n'}
+[19.037958] (-) TimerEvent: {}
+[19.057008] (main_interface) StdoutLine: {'line': b'[ 40%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[19.058986] (main_interface) StdoutLine: {'line': b'[ 42%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[19.141904] (-) TimerEvent: {}
+[19.247133] (-) TimerEvent: {}
+[19.347523] (-) TimerEvent: {}
+[19.374067] (main_interface) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library libmain_interface__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[19.386438] (main_interface) StdoutLine: {'line': b'[ 47%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[19.447757] (-) TimerEvent: {}
+[19.549548] (-) TimerEvent: {}
+[19.588612] (main_interface) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/main_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/main_interface/msg/detail/byte_row__type_support_c.cpp.o\x1b[0m\n'}
+[19.591464] (main_interface) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/main_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/main_interface/msg/detail/byte_row__type_support.c.o\x1b[0m\n'}
+[19.649750] (-) TimerEvent: {}
+[19.663942] (main_interface) StdoutLine: {'line': b'[ 55%] \x1b[32mBuilding C object CMakeFiles/main_interface__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/main_interface/msg/detail/byte_rows__type_support.c.o\x1b[0m\n'}
+[19.668497] (main_interface) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding CXX object CMakeFiles/main_interface__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/main_interface/msg/detail/byte_rows__type_support_c.cpp.o\x1b[0m\n'}
+[19.689859] (main_interface) StdoutLine: {'line': b'[ 60%] \x1b[32m\x1b[1mLinking CXX shared library libmain_interface__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[19.701516] (main_interface) StdoutLine: {'line': b'[ 62%] \x1b[32m\x1b[1mLinking CXX shared library libmain_interface__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[19.742169] (main_interface) StdoutLine: {'line': b'[ 65%] \x1b[32m\x1b[1mLinking C shared library libmain_interface__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[19.750005] (-) TimerEvent: {}
+[19.789340] (main_interface) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/main_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/main_interface/msg/byte_rows__type_support.cpp.o\x1b[0m\n'}
+[19.789836] (main_interface) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/main_interface__rosidl_typesupport_c.dir/rosidl_typesupport_c/main_interface/msg/byte_row__type_support.cpp.o\x1b[0m\n'}
+[19.850229] (-) TimerEvent: {}
+[19.850913] (main_interface) StdoutLine: {'line': b'[ 72%] \x1b[32m\x1b[1mLinking CXX shared library libmain_interface__rosidl_typesupport_c.so\x1b[0m\n'}
+[19.918384] (main_interface) StdoutLine: {'line': b'[ 72%] Built target main_interface__rosidl_typesupport_cpp\n'}
+[19.951632] (-) TimerEvent: {}
+[20.052149] (-) TimerEvent: {}
+[20.152688] (-) TimerEvent: {}
+[20.170364] (main_interface) StdoutLine: {'line': b'[ 75%] \x1b[32m\x1b[1mLinking CXX shared library libmain_interface__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[20.171262] (main_interface) StdoutLine: {'line': b'[ 75%] Built target main_interface__rosidl_typesupport_introspection_cpp\n'}
+[20.181226] (main_interface) StdoutLine: {'line': b'[ 75%] Built target main_interface__rosidl_typesupport_fastrtps_cpp\n'}
+[20.225979] (main_interface) StdoutLine: {'line': b'[ 75%] Built target main_interface__rosidl_typesupport_introspection_c\n'}
+[20.253215] (-) TimerEvent: {}
+[20.279803] (main_interface) StdoutLine: {'line': b'[ 75%] Built target main_interface__rosidl_typesupport_c\n'}
+[20.353430] (-) TimerEvent: {}
+[20.454529] (-) TimerEvent: {}
+[20.552069] (main_interface) StdoutLine: {'line': b'[ 75%] Built target main_interface__rosidl_typesupport_fastrtps_c\n'}
+[20.554703] (-) TimerEvent: {}
+[20.581879] (main_interface) StdoutLine: {'line': b'[ 75%] Built target main_interface\n'}
+[20.609558] (main_interface) StdoutLine: {'line': b'[ 77%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[20.655245] (-) TimerEvent: {}
+[20.755652] (-) TimerEvent: {}
+[20.856132] (-) TimerEvent: {}
+[20.944471] (main_interface) StdoutLine: {'line': b'[ 77%] Built target main_interface__py\n'}
+[20.956356] (-) TimerEvent: {}
+[20.972955] (main_interface) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/main_interface__rosidl_generator_py.dir/rosidl_generator_py/main_interface/msg/_byte_row_s.c.o\x1b[0m\n'}
+[20.973224] (main_interface) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/main_interface__rosidl_generator_py.dir/rosidl_generator_py/main_interface/msg/_byte_rows_s.c.o\x1b[0m\n'}
+[21.056545] (-) TimerEvent: {}
+[21.146816] (main_interface) StdoutLine: {'line': b'[ 85%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/main_interface/libmain_interface__rosidl_generator_py.so\x1b[0m\n'}
+[21.156755] (-) TimerEvent: {}
+[21.257289] (-) TimerEvent: {}
+[21.358079] (-) TimerEvent: {}
+[21.458723] (-) TimerEvent: {}
+[21.476937] (main_interface) StdoutLine: {'line': b'[ 85%] Built target main_interface__rosidl_generator_py\n'}
+[21.509973] (main_interface) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/main_interface__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/main_interface/_main_interface_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[21.510367] (main_interface) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/main_interface__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/main_interface/_main_interface_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[21.510536] (main_interface) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/main_interface__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/main_interface/_main_interface_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[21.558897] (-) TimerEvent: {}
+[21.641607] (main_interface) StdoutLine: {'line': b'[ 95%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/main_interface/main_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[21.645729] (main_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/main_interface/main_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[21.646026] (main_interface) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/main_interface/main_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[21.659053] (-) TimerEvent: {}
+[21.759838] (-) TimerEvent: {}
+[21.860599] (-) TimerEvent: {}
+[21.921174] (main_interface) StdoutLine: {'line': b'[100%] Built target main_interface__rosidl_typesupport_c__pyext\n'}
+[21.921435] (main_interface) StdoutLine: {'line': b'[100%] Built target main_interface__rosidl_typesupport_fastrtps_c__pyext\n'}
+[21.921637] (main_interface) StdoutLine: {'line': b'[100%] Built target main_interface__rosidl_typesupport_introspection_c__pyext\n'}
+[21.940193] (main_interface) CommandEnded: {'returncode': 0}
+[21.941619] (main_interface) JobProgress: {'identifier': 'main_interface', 'progress': 'install'}
+[21.954861] (main_interface) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/unique/ros2_ws/ros_test/build/main_interface'], 'cwd': '/home/unique/ros2_ws/ros_test/build/main_interface', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unique'), ('GIT_ASKPASS', '/home/unique/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/unique/ros2_ws/ros_test/install/low_prior/lib:/home/unique/ros2_ws/ros_test/install/high_prior/lib:/home/unique/ros2_ws/install/village_interface/lib:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/unique'), ('OLDPWD', '/home/unique/ros2_ws/ros_test/src'), ('TERM_PROGRAM_VERSION', '1.124.2'), ('RUSTUP_UPDATE_ROOT', 'https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-82bae6d9-a570-4d1d-80fe-b5b55c2e6fc2.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/unique/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/unique/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/home/unique/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('RUSTUP_DIST_SERVER', 'https://mirrors.tuna.tsinghua.edu.cn/rustup'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install:/home/unique/ros2_ws/install:/home/unique/ros2_ws/ros2_21_tutorials/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'unique'), ('NAME', 'TBunique'), ('WSL_INTEROP', '/run/WSL/416_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unique/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/unique/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/unique/.vscode-server/bin/6928394f91b684055b873eecb8bc281365131f1c/bin/remote-cli:/home/unique/.local/bin:/home/unique/.cargo/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/d/3VMWare/bin/:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Strawberry/c/bin:/mnt/c/Strawberry/perl/site/bin:/mnt/c/Strawberry/perl/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x86/:/mnt/d/msys64/usr/bin:/mnt/d/msys64/mingw64/bin:/mnt/c/Users/23632/AppData/Local/uv/bin:/mnt/c/Program Files/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/nvm:/mnt/c/Program Files/nodejs:/mnt/d/Program Files/Git/cmd:/mnt/d/Python/Scripts/:/mnt/d/Python/:/mnt/c/Users/23632/.moon/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Users/23632/.cargo/bin:/mnt/c/Users/23632/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/23632/.dotnet/tools:/mnt/d/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64:/mnt/c/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64:/mnt/d/Program Files/Tesseract-OCR:/mnt/c/Users/23632/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/23632/AppData/Local/Programs/Ollama:/mnt/d/Program Files/JetBrains/RustRover 2024.3.7/bin:/mnt/d/3_Flutter/flutter/bin:/mnt/d/Program Files/CodeBuddy CN/bin:/snap/bin:/home/unique/.vscode-server/extensions/ms-python.debugpy-2026.6.0/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/home/unique/.vscode-server/extensions/ms-python.debugpy-2026.6.0/.noConfigDebugAdapterEndpoints/endpoint-025aca6cd74c5f23.txt'), ('LANG', 'C.UTF-8'), ('PYTHONSTARTUP', '/home/unique/.vscode-server/data/User/workspaceStorage/508a740a3a18a8afb6b851ff54dfac0e/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2d50286631.sock'), ('TERM_PROGRAM', 'vscode'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('AMENT_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_launch:/home/unique/ros2_ws/ros_test/install/low_prior:/home/unique/ros2_ws/ros_test/install/high_prior:/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/install/village_wang:/home/unique/ros2_ws/install/village_interface:/home/unique/ros2_ws/install/my_cpp_pkg:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_c:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/unique/ros2_ws/ros_test/build/main_interface'), ('COPILOT_DEBUG_NONCE', '5d901767bafdd9f73c7d9e0f0be861af'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unique/ros2_ws/install/village_interface/local/lib/python3.10/dist-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface/local/lib/python3.10/dist-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_launch:/home/unique/ros2_ws/ros_test/install/low_prior:/home/unique/ros2_ws/ros_test/install/high_prior:/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/install/village_wang:/home/unique/ros2_ws/install/village_interface:/home/unique/ros2_ws/install/my_cpp_pkg:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_c:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[21.960784] (-) TimerEvent: {}
+[21.965911] (main_interface) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[21.966412] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/ament_index/resource_index/rosidl_interfaces/main_interface\n'}
+[21.966995] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface\n'}
+[21.967198] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg\n'}
+[21.967302] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/rosidl_generator_c__visibility_control.h\n'}
+[21.967590] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/byte_row.h\n'}
+[21.967739] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/byte_rows.h\n'}
+[21.967902] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail\n'}
+[21.968095] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_rows__functions.h\n'}
+[21.968276] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_row__functions.h\n'}
+[21.968569] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_row__functions.c\n'}
+[21.968699] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_rows__type_support.h\n'}
+[21.969053] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_rows__functions.c\n'}
+[21.969232] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_row__struct.h\n'}
+[21.969342] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_row__type_support.h\n'}
+[21.969588] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_rows__struct.h\n'}
+[21.969948] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/environment/library_path.sh\n'}
+[21.970221] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/environment/library_path.dsv\n'}
+[21.970579] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/lib/libmain_interface__rosidl_generator_c.so\n'}
+[21.971308] (main_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/unique/ros2_ws/ros_test/install/main_interface/lib/libmain_interface__rosidl_generator_c.so" to ""\n'}
+[21.971497] (main_interface) StdoutLine: {'line': b'-- Up-to-date: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface\n'}
+[21.971744] (main_interface) StdoutLine: {'line': b'-- Up-to-date: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg\n'}
+[21.971810] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[21.971945] (main_interface) StdoutLine: {'line': b'-- Up-to-date: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail\n'}
+[21.972196] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_row__rosidl_typesupport_fastrtps_c.h\n'}
+[21.972305] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_rows__rosidl_typesupport_fastrtps_c.h\n'}
+[21.972491] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/lib/libmain_interface__rosidl_typesupport_fastrtps_c.so\n'}
+[21.973192] (main_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/unique/ros2_ws/ros_test/install/main_interface/lib/libmain_interface__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[21.973428] (main_interface) StdoutLine: {'line': b'-- Up-to-date: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface\n'}
+[21.973680] (main_interface) StdoutLine: {'line': b'-- Up-to-date: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg\n'}
+[21.973752] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/byte_row.hpp\n'}
+[21.973921] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[21.974086] (main_interface) StdoutLine: {'line': b'-- Up-to-date: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail\n'}
+[21.974402] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_rows__builder.hpp\n'}
+[21.974572] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_row__builder.hpp\n'}
+[21.974813] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_rows__struct.hpp\n'}
+[21.974902] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_row__struct.hpp\n'}
+[21.975229] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_rows__type_support.hpp\n'}
+[21.975336] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_row__type_support.hpp\n'}
+[21.975545] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_rows__traits.hpp\n'}
+[21.975754] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_row__traits.hpp\n'}
+[21.975903] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/byte_rows.hpp\n'}
+[21.976151] (main_interface) StdoutLine: {'line': b'-- Up-to-date: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface\n'}
+[21.976267] (main_interface) StdoutLine: {'line': b'-- Up-to-date: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg\n'}
+[21.976513] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[21.976748] (main_interface) StdoutLine: {'line': b'-- Up-to-date: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail\n'}
+[21.976958] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_rows__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[21.977248] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_row__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[21.977500] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/dds_fastrtps\n'}
+[21.977573] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/lib/libmain_interface__rosidl_typesupport_fastrtps_cpp.so\n'}
+[21.978179] (main_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/unique/ros2_ws/ros_test/install/main_interface/lib/libmain_interface__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[21.978479] (main_interface) StdoutLine: {'line': b'-- Up-to-date: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface\n'}
+[21.978548] (main_interface) StdoutLine: {'line': b'-- Up-to-date: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg\n'}
+[21.978870] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[21.978989] (main_interface) StdoutLine: {'line': b'-- Up-to-date: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail\n'}
+[21.979147] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_rows__rosidl_typesupport_introspection_c.h\n'}
+[21.979420] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_rows__type_support.c\n'}
+[21.979642] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_row__type_support.c\n'}
+[21.979981] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_row__rosidl_typesupport_introspection_c.h\n'}
+[21.980375] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/lib/libmain_interface__rosidl_typesupport_introspection_c.so\n'}
+[21.980972] (main_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/unique/ros2_ws/ros_test/install/main_interface/lib/libmain_interface__rosidl_typesupport_introspection_c.so" to ""\n'}
+[21.981322] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/lib/libmain_interface__rosidl_typesupport_c.so\n'}
+[21.981897] (main_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/unique/ros2_ws/ros_test/install/main_interface/lib/libmain_interface__rosidl_typesupport_c.so" to ""\n'}
+[21.982025] (main_interface) StdoutLine: {'line': b'-- Up-to-date: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface\n'}
+[21.982335] (main_interface) StdoutLine: {'line': b'-- Up-to-date: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg\n'}
+[21.982408] (main_interface) StdoutLine: {'line': b'-- Up-to-date: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail\n'}
+[21.982470] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_rows__type_support.cpp\n'}
+[21.982701] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_row__rosidl_typesupport_introspection_cpp.hpp\n'}
+[21.983065] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_row__type_support.cpp\n'}
+[21.983351] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/include/main_interface/main_interface/msg/detail/byte_rows__rosidl_typesupport_introspection_cpp.hpp\n'}
+[21.983587] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/lib/libmain_interface__rosidl_typesupport_introspection_cpp.so\n'}
+[21.984546] (main_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/unique/ros2_ws/ros_test/install/main_interface/lib/libmain_interface__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[21.984636] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/lib/libmain_interface__rosidl_typesupport_cpp.so\n'}
+[21.985328] (main_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/unique/ros2_ws/ros_test/install/main_interface/lib/libmain_interface__rosidl_typesupport_cpp.so" to ""\n'}
+[21.985453] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/environment/pythonpath.sh\n'}
+[21.985616] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/environment/pythonpath.dsv\n'}
+[21.985914] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface-0.0.0-py3.10.egg-info\n'}
+[21.986700] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[21.987026] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[21.987279] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[21.987521] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[21.988001] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface\n'}
+[21.988286] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/_main_interface_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[21.988946] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/main_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.989049] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/_main_interface_s.ep.rosidl_typesupport_c.c\n'}
+[21.989267] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/libmain_interface__rosidl_generator_py.so\n'}
+[21.989582] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/main_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[21.989894] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/_main_interface_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[21.990201] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/msg\n'}
+[21.990500] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/msg/_byte_rows_s.c\n'}
+[21.990751] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/msg/_byte_rows.py\n'}
+[21.991070] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/msg/_byte_row_s.c\n'}
+[21.991298] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/msg/_byte_row.py\n'}
+[21.991554] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/msg/__init__.py\n'}
+[21.991798] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/__init__.py\n'}
+[21.992030] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/main_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[22.039968] (main_interface) StdoutLine: {'line': b"Listing '/home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface'...\n"}
+[22.040288] (main_interface) StdoutLine: {'line': b"Compiling '/home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/__init__.py'...\n"}
+[22.040407] (main_interface) StdoutLine: {'line': b"Listing '/home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/msg'...\n"}
+[22.040470] (main_interface) StdoutLine: {'line': b"Compiling '/home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/msg/__init__.py'...\n"}
+[22.040525] (main_interface) StdoutLine: {'line': b"Compiling '/home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/msg/_byte_row.py'...\n"}
+[22.040577] (main_interface) StdoutLine: {'line': b"Compiling '/home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/msg/_byte_rows.py'...\n"}
+[22.046581] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/main_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[22.047063] (main_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/main_interface_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[22.047391] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/main_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[22.047913] (main_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/main_interface_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[22.048206] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/main_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[22.048789] (main_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages/main_interface/main_interface_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[22.048882] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/lib/libmain_interface__rosidl_generator_py.so\n'}
+[22.049512] (main_interface) StdoutLine: {'line': b'-- Set runtime path of "/home/unique/ros2_ws/ros_test/install/main_interface/lib/libmain_interface__rosidl_generator_py.so" to ""\n'}
+[22.049784] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/ament_index/resource_index/rust_packages/main_interface\n'}
+[22.049968] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/rust\n'}
+[22.050216] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/rust/src\n'}
+[22.050322] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/rust/src/msg\n'}
+[22.050465] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/rust/src/msg/rmw.rs\n'}
+[22.050748] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/rust/src/lib.rs\n'}
+[22.051041] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/rust/src/msg.rs\n'}
+[22.051261] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/rust/build.rs\n'}
+[22.051407] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/rust/Cargo.toml\n'}
+[22.051689] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/msg/ByteRow.idl\n'}
+[22.052162] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/msg/ByteRows.idl\n'}
+[22.052274] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/msg/ByteRow.msg\n'}
+[22.052514] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/msg/ByteRows.msg\n'}
+[22.052875] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/ament_index/resource_index/package_run_dependencies/main_interface\n'}
+[22.053211] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/ament_index/resource_index/parent_prefix_path/main_interface\n'}
+[22.053457] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/environment/ament_prefix_path.sh\n'}
+[22.053788] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/environment/ament_prefix_path.dsv\n'}
+[22.054073] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/environment/path.sh\n'}
+[22.054299] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/environment/path.dsv\n'}
+[22.054501] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/local_setup.bash\n'}
+[22.054726] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/local_setup.sh\n'}
+[22.055164] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/local_setup.zsh\n'}
+[22.055495] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/local_setup.dsv\n'}
+[22.055735] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/package.dsv\n'}
+[22.055989] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/ament_index/resource_index/packages/main_interface\n'}
+[22.056426] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/export_main_interface__rosidl_generator_cExport.cmake\n'}
+[22.056763] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/export_main_interface__rosidl_generator_cExport-noconfig.cmake\n'}
+[22.056998] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/export_main_interface__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[22.057255] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/export_main_interface__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[22.057498] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/export_main_interface__rosidl_generator_cppExport.cmake\n'}
+[22.057808] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/export_main_interface__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[22.058065] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/export_main_interface__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[22.058356] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/main_interface__rosidl_typesupport_introspection_cExport.cmake\n'}
+[22.058609] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/main_interface__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[22.058889] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/main_interface__rosidl_typesupport_cExport.cmake\n'}
+[22.059266] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/main_interface__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[22.059651] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/main_interface__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[22.059785] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/main_interface__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[22.059942] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/main_interface__rosidl_typesupport_cppExport.cmake\n'}
+[22.060188] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/main_interface__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[22.060423] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/export_main_interface__rosidl_generator_pyExport.cmake\n'}
+[22.060775] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/export_main_interface__rosidl_generator_pyExport-noconfig.cmake\n'}
+[22.060956] (-) TimerEvent: {}
+[22.061220] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/rosidl_cmake-extras.cmake\n'}
+[22.061374] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[22.061563] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[22.061756] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[22.062026] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[22.062229] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[22.062472] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[22.062756] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/main_interfaceConfig.cmake\n'}
+[22.062990] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake/main_interfaceConfig-version.cmake\n'}
+[22.063241] (main_interface) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/package.xml\n'}
+[22.066993] (main_interface) CommandEnded: {'returncode': 0}
+[22.093821] (main_interface) JobEnded: {'identifier': 'main_interface', 'rc': 0}
+[22.095452] (-) EventReactorShutdown: {}

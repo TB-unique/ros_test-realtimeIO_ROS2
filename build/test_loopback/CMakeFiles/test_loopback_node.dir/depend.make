@@ -1,0 +1,2 @@
+# Empty dependencies file for test_loopback_node.
+# This may be replaced when dependencies are built.

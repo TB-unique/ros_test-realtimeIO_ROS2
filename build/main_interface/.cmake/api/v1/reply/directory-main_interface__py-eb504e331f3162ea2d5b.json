@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "main_interface__py",
+		"source" : "/home/unique/ros2_ws/ros_test/build/main_interface/main_interface__py"
+	}
+}

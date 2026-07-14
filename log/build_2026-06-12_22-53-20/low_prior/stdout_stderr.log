@@ -1,0 +1,25 @@
+[ 50%] [32mBuilding CXX object CMakeFiles/low_prior.dir/src/low_prior.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library liblow_prior.so[0m
+[100%] Built target low_prior
+-- Install configuration: ""
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/include
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/include/low_prior
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/include/low_prior/low_prior.hpp
+-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/lib/liblow_prior.so
+-- Set runtime path of "/home/unique/ros2_ws/ros_test/install/low_prior/lib/liblow_prior.so" to ""
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/ament_index/resource_index/package_run_dependencies/low_prior
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/ament_index/resource_index/parent_prefix_path/low_prior
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/environment/ament_prefix_path.sh
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/environment/path.sh
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/environment/path.dsv
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/local_setup.bash
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/local_setup.sh
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/local_setup.zsh
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/local_setup.dsv
+-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/package.dsv
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/ament_index/resource_index/packages/low_prior
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/ament_index/resource_index/rclcpp_components/low_prior
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/cmake/low_priorConfig.cmake
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/cmake/low_priorConfig-version.cmake
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/package.xml

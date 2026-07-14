@@ -1,0 +1,204 @@
+[0.553s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'IOqueue', 'IOringbuffer', 'test_loopback']
+[0.553s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['IOqueue', 'IOringbuffer', 'test_loopback'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7a036ec5c580>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7a036ed5d930>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7a036ed5d930>>)
+[1.045s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.045s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.045s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.045s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.045s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.045s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.046s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/unique/ros2_ws/ros_test'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.046s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.047s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.104s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.105s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.105s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.106s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.107s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.107s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.107s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[1.107s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[1.107s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[1.107s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[1.107s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[1.107s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[1.108s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/IOqueue) by extensions ['ignore', 'ignore_ament_install']
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/IOqueue) by extension 'ignore'
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/IOqueue) by extension 'ignore_ament_install'
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/IOqueue) by extensions ['colcon_pkg']
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/IOqueue) by extension 'colcon_pkg'
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/IOqueue) by extensions ['colcon_meta']
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/IOqueue) by extension 'colcon_meta'
+[1.109s] Level 1:colcon.colcon_core.package_identification:_identify(src/IOqueue) by extensions ['ros']
+[1.110s] Level 1:colcon.colcon_core.package_identification:_identify(src/IOqueue) by extension 'ros'
+[1.118s] DEBUG:colcon.colcon_core.package_identification:Package 'src/IOqueue' with type 'ros.ament_cmake' and name 'IOqueue'
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/IOringbuffer) by extensions ['ignore', 'ignore_ament_install']
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/IOringbuffer) by extension 'ignore'
+[1.118s] Level 1:colcon.colcon_core.package_identification:_identify(src/IOringbuffer) by extension 'ignore_ament_install'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/IOringbuffer) by extensions ['colcon_pkg']
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/IOringbuffer) by extension 'colcon_pkg'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/IOringbuffer) by extensions ['colcon_meta']
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/IOringbuffer) by extension 'colcon_meta'
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/IOringbuffer) by extensions ['ros']
+[1.119s] Level 1:colcon.colcon_core.package_identification:_identify(src/IOringbuffer) by extension 'ros'
+[1.121s] DEBUG:colcon.colcon_core.package_identification:Package 'src/IOringbuffer' with type 'ros.ament_cmake' and name 'IOringbuffer'
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/main_interface) by extensions ['ignore', 'ignore_ament_install']
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/main_interface) by extension 'ignore'
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/main_interface) by extension 'ignore_ament_install'
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/main_interface) by extensions ['colcon_pkg']
+[1.121s] Level 1:colcon.colcon_core.package_identification:_identify(src/main_interface) by extension 'colcon_pkg'
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/main_interface) by extensions ['colcon_meta']
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/main_interface) by extension 'colcon_meta'
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/main_interface) by extensions ['ros']
+[1.122s] Level 1:colcon.colcon_core.package_identification:_identify(src/main_interface) by extension 'ros'
+[1.124s] DEBUG:colcon.colcon_core.package_identification:Package 'src/main_interface' with type 'ros.ament_cmake' and name 'main_interface'
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_common) by extensions ['ignore', 'ignore_ament_install']
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_common) by extension 'ignore'
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_common) by extension 'ignore_ament_install'
+[1.125s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_common) by extensions ['colcon_pkg']
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_common) by extension 'colcon_pkg'
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_common) by extensions ['colcon_meta']
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_common) by extension 'colcon_meta'
+[1.126s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_common) by extensions ['ros']
+[1.127s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_common) by extension 'ros'
+[1.129s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realtime_common' with type 'ros.ament_cmake' and name 'realtime_common'
+[1.129s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_launch) by extensions ['ignore', 'ignore_ament_install']
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_launch) by extension 'ignore'
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_launch) by extension 'ignore_ament_install'
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_launch) by extensions ['colcon_pkg']
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_launch) by extension 'colcon_pkg'
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_launch) by extensions ['colcon_meta']
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_launch) by extension 'colcon_meta'
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_launch) by extensions ['ros']
+[1.130s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_launch) by extension 'ros'
+[1.131s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realtime_launch' with type 'ros.ament_cmake' and name 'realtime_launch'
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_loopback) by extensions ['ignore', 'ignore_ament_install']
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_loopback) by extension 'ignore'
+[1.131s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_loopback) by extension 'ignore_ament_install'
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_loopback) by extensions ['colcon_pkg']
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_loopback) by extension 'colcon_pkg'
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_loopback) by extensions ['colcon_meta']
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_loopback) by extension 'colcon_meta'
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_loopback) by extensions ['ros']
+[1.132s] Level 1:colcon.colcon_core.package_identification:_identify(src/test_loopback) by extension 'ros'
+[1.133s] DEBUG:colcon.colcon_core.package_identification:Package 'src/test_loopback' with type 'ros.ament_cmake' and name 'test_loopback'
+[1.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.133s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.134s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.192s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'main_interface' in 'src/main_interface'
+[1.192s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'realtime_common' in 'src/realtime_common'
+[1.192s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'realtime_launch' in 'src/realtime_launch'
+[1.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.193s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.199s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 275 installed packages in /opt/ros/humble
+[1.202s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'IOqueue' build argument 'cmake_args' from command line to 'None'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'IOqueue' build argument 'cmake_target' from command line to 'None'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'IOqueue' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'IOqueue' build argument 'cmake_clean_cache' from command line to 'False'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'IOqueue' build argument 'cmake_clean_first' from command line to 'False'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'IOqueue' build argument 'cmake_force_configure' from command line to 'False'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'IOqueue' build argument 'ament_cmake_args' from command line to 'None'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'IOqueue' build argument 'catkin_cmake_args' from command line to 'None'
+[1.259s] Level 5:colcon.colcon_core.verb:set package 'IOqueue' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.259s] DEBUG:colcon.colcon_core.verb:Building package 'IOqueue' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/unique/ros2_ws/ros_test/build/IOqueue', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/unique/ros2_ws/ros_test/install/IOqueue', 'merge_install': False, 'path': '/home/unique/ros2_ws/ros_test/src/IOqueue', 'symlink_install': False, 'test_result_base': None}
+[1.260s] Level 5:colcon.colcon_core.verb:set package 'IOringbuffer' build argument 'cmake_args' from command line to 'None'
+[1.260s] Level 5:colcon.colcon_core.verb:set package 'IOringbuffer' build argument 'cmake_target' from command line to 'None'
+[1.260s] Level 5:colcon.colcon_core.verb:set package 'IOringbuffer' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.260s] Level 5:colcon.colcon_core.verb:set package 'IOringbuffer' build argument 'cmake_clean_cache' from command line to 'False'
+[1.260s] Level 5:colcon.colcon_core.verb:set package 'IOringbuffer' build argument 'cmake_clean_first' from command line to 'False'
+[1.260s] Level 5:colcon.colcon_core.verb:set package 'IOringbuffer' build argument 'cmake_force_configure' from command line to 'False'
+[1.260s] Level 5:colcon.colcon_core.verb:set package 'IOringbuffer' build argument 'ament_cmake_args' from command line to 'None'
+[1.260s] Level 5:colcon.colcon_core.verb:set package 'IOringbuffer' build argument 'catkin_cmake_args' from command line to 'None'
+[1.260s] Level 5:colcon.colcon_core.verb:set package 'IOringbuffer' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.260s] DEBUG:colcon.colcon_core.verb:Building package 'IOringbuffer' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/unique/ros2_ws/ros_test/build/IOringbuffer', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/unique/ros2_ws/ros_test/install/IOringbuffer', 'merge_install': False, 'path': '/home/unique/ros2_ws/ros_test/src/IOringbuffer', 'symlink_install': False, 'test_result_base': None}
+[1.261s] Level 5:colcon.colcon_core.verb:set package 'test_loopback' build argument 'cmake_args' from command line to 'None'
+[1.261s] Level 5:colcon.colcon_core.verb:set package 'test_loopback' build argument 'cmake_target' from command line to 'None'
+[1.261s] Level 5:colcon.colcon_core.verb:set package 'test_loopback' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.261s] Level 5:colcon.colcon_core.verb:set package 'test_loopback' build argument 'cmake_clean_cache' from command line to 'False'
+[1.261s] Level 5:colcon.colcon_core.verb:set package 'test_loopback' build argument 'cmake_clean_first' from command line to 'False'
+[1.261s] Level 5:colcon.colcon_core.verb:set package 'test_loopback' build argument 'cmake_force_configure' from command line to 'False'
+[1.261s] Level 5:colcon.colcon_core.verb:set package 'test_loopback' build argument 'ament_cmake_args' from command line to 'None'
+[1.261s] Level 5:colcon.colcon_core.verb:set package 'test_loopback' build argument 'catkin_cmake_args' from command line to 'None'
+[1.261s] Level 5:colcon.colcon_core.verb:set package 'test_loopback' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.261s] DEBUG:colcon.colcon_core.verb:Building package 'test_loopback' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/unique/ros2_ws/ros_test/build/test_loopback', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/unique/ros2_ws/ros_test/install/test_loopback', 'merge_install': False, 'path': '/home/unique/ros2_ws/ros_test/src/test_loopback', 'symlink_install': False, 'test_result_base': None}
+[1.261s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.263s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.263s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/unique/ros2_ws/ros_test/src/IOqueue' with build type 'ament_cmake'
+[1.263s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/unique/ros2_ws/ros_test/src/IOqueue'
+[1.272s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.272s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.272s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.278s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/unique/ros2_ws/ros_test/src/IOringbuffer' with build type 'ament_cmake'
+[1.278s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/unique/ros2_ws/ros_test/src/IOringbuffer'
+[1.278s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.279s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.283s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/unique/ros2_ws/ros_test/src/test_loopback' with build type 'ament_cmake'
+[1.283s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/unique/ros2_ws/ros_test/src/test_loopback'
+[1.284s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.284s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.554s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/unique/ros2_ws/ros_test/build/test_loopback': AMENT_PREFIX_PATH=/home/unique/ros2_ws/ros_test/install/main_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/unique/ros2_ws/ros_test/install/main_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/unique/ros2_ws/ros_test/install/main_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/unique/ros2_ws/ros_test/build/test_loopback -- -j8 -l8
+[1.687s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/unique/ros2_ws/ros_test/build/IOringbuffer': AMENT_PREFIX_PATH=/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/ros_test/install/main_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/ros_test/install/main_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/unique/ros2_ws/ros_test/install/main_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/unique/ros2_ws/ros_test/build/IOringbuffer -- -j8 -l8
+[1.693s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/unique/ros2_ws/ros_test/build/IOqueue': AMENT_PREFIX_PATH=/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/ros_test/install/main_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/ros_test/install/main_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/unique/ros2_ws/ros_test/install/main_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/unique/ros2_ws/ros_test/build/IOqueue -- -j8 -l8
+[7.072s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/unique/ros2_ws/ros_test/build/IOringbuffer' returned '2': AMENT_PREFIX_PATH=/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/ros_test/install/main_interface:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/ros_test/install/main_interface:/opt/ros/humble LD_LIBRARY_PATH=/home/unique/ros2_ws/ros_test/install/main_interface/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/unique/ros2_ws/ros_test/build/IOringbuffer -- -j8 -l8
+[7.072s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(IOringbuffer)
+[7.079s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/IOringbuffer' for CMake module files
+[7.080s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/IOringbuffer' for CMake config files
+[7.080s] Level 1:colcon.colcon_core.shell:create_environment_hook('IOringbuffer', 'cmake_prefix_path')
+[7.080s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/hook/cmake_prefix_path.ps1'
+[7.081s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/hook/cmake_prefix_path.dsv'
+[7.082s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/hook/cmake_prefix_path.sh'
+[7.084s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/IOringbuffer/bin'
+[7.084s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/IOringbuffer/lib/pkgconfig/IOringbuffer.pc'
+[7.084s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/IOringbuffer/lib/python3.10/site-packages'
+[7.084s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/IOringbuffer/bin'
+[7.085s] INFO:colcon.colcon_core.shell:Creating package script '/home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/package.ps1'
+[7.086s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/package.dsv'
+[7.087s] INFO:colcon.colcon_core.shell:Creating package script '/home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/package.sh'
+[7.088s] INFO:colcon.colcon_core.shell:Creating package script '/home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/package.bash'
+[7.090s] INFO:colcon.colcon_core.shell:Creating package script '/home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/package.zsh'
+[7.091s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/unique/ros2_ws/ros_test/install/IOringbuffer/share/colcon-core/packages/IOringbuffer)
+[12.451s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.451s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.451s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '2'
+[12.452s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.584s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[12.585s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[12.585s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[12.585s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[12.585s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[12.585s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.586s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/unique/ros2_ws/ros_test/install/local_setup.ps1'
+[12.589s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/unique/ros2_ws/ros_test/install/_local_setup_util_ps1.py'
+[12.592s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/unique/ros2_ws/ros_test/install/setup.ps1'
+[12.594s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/unique/ros2_ws/ros_test/install/local_setup.sh'
+[12.595s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/unique/ros2_ws/ros_test/install/_local_setup_util_sh.py'
+[12.596s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/unique/ros2_ws/ros_test/install/setup.sh'
+[12.598s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/unique/ros2_ws/ros_test/install/local_setup.bash'
+[12.599s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/unique/ros2_ws/ros_test/install/setup.bash'
+[12.601s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/unique/ros2_ws/ros_test/install/local_setup.zsh'
+[12.601s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/unique/ros2_ws/ros_test/install/setup.zsh'

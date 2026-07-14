@@ -1,0 +1,75 @@
+[0.030s] Invoking command in '/home/unique/ros2_ws/ros_test/build/low_prior': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble /usr/bin/cmake /home/unique/ros2_ws/ros_test/src/low_prior -DCMAKE_INSTALL_PREFIX=/home/unique/ros2_ws/ros_test/install/low_prior
+[0.482s] -- The C compiler identification is GNU 11.4.0
+[2.123s] -- The CXX compiler identification is GNU 11.4.0
+[3.240s] -- Detecting C compiler ABI info
+[3.569s] -- Detecting C compiler ABI info - done
+[3.574s] -- Check for working C compiler: /usr/bin/cc - skipped
+[3.575s] -- Detecting C compile features
+[3.576s] -- Detecting C compile features - done
+[3.580s] -- Detecting CXX compiler ABI info
+[3.945s] -- Detecting CXX compiler ABI info - done
+[3.951s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[3.951s] -- Detecting CXX compile features
+[3.952s] -- Detecting CXX compile features - done
+[3.959s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[4.170s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[4.328s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[4.704s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[4.716s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[4.732s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[4.752s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[4.779s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[4.857s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[4.865s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[7.825s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[11.425s] -- Found FastRTPS: /opt/ros/humble/include  
+[17.696s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[17.723s] -- Looking for pthread.h
+[18.083s] -- Looking for pthread.h - found
+[18.084s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[18.452s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[18.453s] -- Found Threads: TRUE  
+[18.532s] -- Found rclcpp_components: 16.0.19 (/opt/ros/humble/share/rclcpp_components/cmake)
+[18.576s] -- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)
+[18.616s] -- Found realtime_common: 0.0.0 (/home/unique/ros2_ws/ros_test/install/realtime_common/share/realtime_common/cmake)
+[18.631s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[18.752s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[18.752s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/unique/ros2_ws/ros_test/src/low_prior/include>
+[18.752s] -- Configured cppcheck exclude dirs and/or files: 
+[18.754s] -- Added test 'lint_cmake' to check CMake code style
+[18.756s] -- Added test 'uncrustify' to check C / C++ code style
+[18.756s] -- Configured uncrustify additional arguments: 
+[18.757s] -- Added test 'xmllint' to check XML markup files
+[18.760s] -- Configuring done
+[18.778s] -- Generating done
+[18.784s] -- Build files have been written to: /home/unique/ros2_ws/ros_test/build/low_prior
+[18.801s] Invoked command in '/home/unique/ros2_ws/ros_test/build/low_prior' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble /usr/bin/cmake /home/unique/ros2_ws/ros_test/src/low_prior -DCMAKE_INSTALL_PREFIX=/home/unique/ros2_ws/ros_test/install/low_prior
+[18.804s] Invoking command in '/home/unique/ros2_ws/ros_test/build/low_prior': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble /usr/bin/cmake --build /home/unique/ros2_ws/ros_test/build/low_prior -- -j8 -l8
+[18.886s] [ 50%] [32mBuilding CXX object CMakeFiles/low_prior.dir/src/low_prior.cpp.o[0m
+[29.471s] [100%] [32m[1mLinking CXX shared library liblow_prior.so[0m
+[30.134s] [100%] Built target low_prior
+[30.156s] Invoked command in '/home/unique/ros2_ws/ros_test/build/low_prior' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble /usr/bin/cmake --build /home/unique/ros2_ws/ros_test/build/low_prior -- -j8 -l8
+[30.173s] Invoking command in '/home/unique/ros2_ws/ros_test/build/low_prior': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble /usr/bin/cmake --install /home/unique/ros2_ws/ros_test/build/low_prior
+[30.184s] -- Install configuration: ""
+[30.184s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/include
+[30.184s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/include/low_prior
+[30.185s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/include/low_prior/low_prior.hpp
+[30.185s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/lib/liblow_prior.so
+[30.197s] -- Set runtime path of "/home/unique/ros2_ws/ros_test/install/low_prior/lib/liblow_prior.so" to ""
+[30.198s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/ament_index/resource_index/package_run_dependencies/low_prior
+[30.198s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/ament_index/resource_index/parent_prefix_path/low_prior
+[30.199s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/environment/ament_prefix_path.sh
+[30.199s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/environment/ament_prefix_path.dsv
+[30.199s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/environment/path.sh
+[30.200s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/environment/path.dsv
+[30.200s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/local_setup.bash
+[30.200s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/local_setup.sh
+[30.201s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/local_setup.zsh
+[30.201s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/local_setup.dsv
+[30.201s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/package.dsv
+[30.202s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/ament_index/resource_index/packages/low_prior
+[30.202s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/ament_index/resource_index/rclcpp_components/low_prior
+[30.203s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/cmake/low_priorConfig.cmake
+[30.203s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/cmake/low_priorConfig-version.cmake
+[30.203s] -- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/package.xml
+[30.208s] Invoked command in '/home/unique/ros2_ws/ros_test/build/low_prior' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble /usr/bin/cmake --install /home/unique/ros2_ws/ros_test/build/low_prior

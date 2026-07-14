@@ -1,0 +1,224 @@
+[0.000000] (-) TimerEvent: {}
+[0.000480] (-) JobUnselected: {'identifier': 'main_interface'}
+[0.001055] (-) JobUnselected: {'identifier': 'realtime_common'}
+[0.001143] (-) JobUnselected: {'identifier': 'realtime_launch'}
+[0.001230] (IOqueue) JobQueued: {'identifier': 'IOqueue', 'dependencies': OrderedDict([('main_interface', '/home/unique/ros2_ws/ros_test/install/main_interface'), ('realtime_common', '/home/unique/ros2_ws/ros_test/install/realtime_common')])}
+[0.001334] (IOringbuffer) JobQueued: {'identifier': 'IOringbuffer', 'dependencies': OrderedDict([('main_interface', '/home/unique/ros2_ws/ros_test/install/main_interface'), ('realtime_common', '/home/unique/ros2_ws/ros_test/install/realtime_common')])}
+[0.001431] (test_loopback) JobQueued: {'identifier': 'test_loopback', 'dependencies': OrderedDict([('main_interface', '/home/unique/ros2_ws/ros_test/install/main_interface')])}
+[0.001527] (IOqueue) JobStarted: {'identifier': 'IOqueue'}
+[0.013238] (IOringbuffer) JobStarted: {'identifier': 'IOringbuffer'}
+[0.021074] (test_loopback) JobStarted: {'identifier': 'test_loopback'}
+[0.100129] (-) TimerEvent: {}
+[0.200574] (-) TimerEvent: {}
+[0.301354] (-) TimerEvent: {}
+[0.401859] (-) TimerEvent: {}
+[0.425590] (test_loopback) JobProgress: {'identifier': 'test_loopback', 'progress': 'cmake'}
+[0.426581] (test_loopback) JobProgress: {'identifier': 'test_loopback', 'progress': 'build'}
+[0.427709] (test_loopback) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/unique/ros2_ws/ros_test/build/test_loopback', '--', '-j8', '-l8'], 'cwd': '/home/unique/ros2_ws/ros_test/build/test_loopback', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/mnt/d/Program Files/Microsoft VS Code'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('USER', 'unique'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/home/unique/.vscode-server/bin/fc3def6774c76082adf699d366f31a557ce5573f/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn/tcf.json","messagesFile":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn/fc3def6774c76082adf699d366f31a557ce5573f/nls.messages.json","corruptMarkerFile":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"95a1d175239d220149ee2b7c238e7810.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn/tcf.json","_cacheRoot":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn","_resolvedLanguagePackCoreLocation":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn/fc3def6774c76082adf699d366f31a557ce5573f","_corruptedFile":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn/corrupted.info"}'), ('SYSTEMD_PAGER', ''), ('VSCODE_WSL_EXT_LOCATION', '/mnt/c/Users/23632/.vscode/extensions/ms-vscode-remote.remote-wsl-0.104.3'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/unique/ros2_ws/ros_test/install/main_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/unique'), ('OLDPWD', '/home/unique/ros2_ws/ros_test'), ('CODEBUDDY_COPILOT_INTERNET_ENVIRONMENT', 'internal'), ('RUSTUP_UPDATE_ROOT', 'https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup'), ('VSCODE_RECONNECTION_GRACE_TIME', '10800000'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-bdaca235-7042-42ba-bf47-dcab5277cd3e.sock'), ('PYTHONUNBUFFERED', '1'), ('STDBUF_O', 'L'), ('ROS_PYTHON_VERSION', '3'), ('PAGER', 'cat'), ('COPILOT_OTEL_FILE_EXPORTER_PATH', '/dev/null'), ('RUSTUP_DIST_SERVER', 'https://mirrors.tuna.tsinghua.edu.cn/rustup'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('VSCODE_L10N_BUNDLE_LOCATION', 'vscode-local:/c%3A/Users/23632/.vscode/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.128.2026070703/translations/extensions/vscode.json-language-features.i18n.json'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('RUBY_UNBUFFERED', '1'), ('LOGNAME', 'unique'), ('NAME', 'TBunique'), ('WSL_INTEROP', '/run/WSL/417_interop'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unique/.vscode-server/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/remote-cli:/home/unique/.local/bin:/home/unique/.cargo/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/d/3VMWare/bin/:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Strawberry/c/bin:/mnt/c/Strawberry/perl/site/bin:/mnt/c/Strawberry/perl/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x86/:/mnt/d/msys64/usr/bin:/mnt/d/msys64/mingw64/bin:/mnt/c/Users/23632/AppData/Local/uv/bin:/mnt/c/Program Files/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/nvm:/mnt/c/Program Files/nodejs:/mnt/d/Program Files/Git/cmd:/mnt/d/Python/Scripts/:/mnt/d/Python/:/mnt/c/Users/23632/.moon/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Users/23632/.cargo/bin:/mnt/c/Users/23632/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/23632/.dotnet/tools:/mnt/d/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64:/mnt/c/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64:/mnt/d/Program Files/Tesseract-OCR:/mnt/c/Users/23632/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/23632/AppData/Local/Programs/Ollama:/mnt/d/Program Files/JetBrains/RustRover 2024.3.7/bin:/mnt/d/3_Flutter/flutter/bin:/mnt/d/Program Files/CodeBuddy CN/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('MANPAGER', 'cat'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('AMENT_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install/main_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('MXC_BIN_DIR', '/home/unique/.vscode-server/bin/fc3def6774c76082adf699d366f31a557ce5573f/node_modules/@microsoft/mxc-sdk/bin'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GIT_PAGER', 'cat'), ('PWD', '/home/unique/ros2_ws/ros_test/build/test_loopback'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('COPILOT_CLI_ENABLED_FEATURE_FLAGS', 'SHELL_SPAWN_BACKEND'), ('HOSTTYPE', 'x86_64'), ('EDITOR', 'cat'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install/main_interface:/opt/ros/humble')]), 'shell': False}
+[0.446644] (IOqueue) JobProgress: {'identifier': 'IOqueue', 'progress': 'cmake'}
+[0.447814] (IOqueue) JobProgress: {'identifier': 'IOqueue', 'progress': 'build'}
+[0.448566] (IOqueue) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/unique/ros2_ws/ros_test/build/IOqueue', '--', '-j8', '-l8'], 'cwd': '/home/unique/ros2_ws/ros_test/build/IOqueue', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/mnt/d/Program Files/Microsoft VS Code'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('USER', 'unique'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/home/unique/.vscode-server/bin/fc3def6774c76082adf699d366f31a557ce5573f/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn/tcf.json","messagesFile":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn/fc3def6774c76082adf699d366f31a557ce5573f/nls.messages.json","corruptMarkerFile":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"95a1d175239d220149ee2b7c238e7810.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn/tcf.json","_cacheRoot":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn","_resolvedLanguagePackCoreLocation":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn/fc3def6774c76082adf699d366f31a557ce5573f","_corruptedFile":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn/corrupted.info"}'), ('SYSTEMD_PAGER', ''), ('VSCODE_WSL_EXT_LOCATION', '/mnt/c/Users/23632/.vscode/extensions/ms-vscode-remote.remote-wsl-0.104.3'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/unique/ros2_ws/ros_test/install/main_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/unique'), ('OLDPWD', '/home/unique/ros2_ws/ros_test'), ('CODEBUDDY_COPILOT_INTERNET_ENVIRONMENT', 'internal'), ('RUSTUP_UPDATE_ROOT', 'https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup'), ('VSCODE_RECONNECTION_GRACE_TIME', '10800000'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-bdaca235-7042-42ba-bf47-dcab5277cd3e.sock'), ('PYTHONUNBUFFERED', '1'), ('STDBUF_O', 'L'), ('ROS_PYTHON_VERSION', '3'), ('PAGER', 'cat'), ('COPILOT_OTEL_FILE_EXPORTER_PATH', '/dev/null'), ('RUSTUP_DIST_SERVER', 'https://mirrors.tuna.tsinghua.edu.cn/rustup'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('VSCODE_L10N_BUNDLE_LOCATION', 'vscode-local:/c%3A/Users/23632/.vscode/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.128.2026070703/translations/extensions/vscode.json-language-features.i18n.json'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('RUBY_UNBUFFERED', '1'), ('LOGNAME', 'unique'), ('NAME', 'TBunique'), ('WSL_INTEROP', '/run/WSL/417_interop'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unique/.vscode-server/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/remote-cli:/home/unique/.local/bin:/home/unique/.cargo/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/d/3VMWare/bin/:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Strawberry/c/bin:/mnt/c/Strawberry/perl/site/bin:/mnt/c/Strawberry/perl/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x86/:/mnt/d/msys64/usr/bin:/mnt/d/msys64/mingw64/bin:/mnt/c/Users/23632/AppData/Local/uv/bin:/mnt/c/Program Files/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/nvm:/mnt/c/Program Files/nodejs:/mnt/d/Program Files/Git/cmd:/mnt/d/Python/Scripts/:/mnt/d/Python/:/mnt/c/Users/23632/.moon/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Users/23632/.cargo/bin:/mnt/c/Users/23632/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/23632/.dotnet/tools:/mnt/d/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64:/mnt/c/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64:/mnt/d/Program Files/Tesseract-OCR:/mnt/c/Users/23632/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/23632/AppData/Local/Programs/Ollama:/mnt/d/Program Files/JetBrains/RustRover 2024.3.7/bin:/mnt/d/3_Flutter/flutter/bin:/mnt/d/Program Files/CodeBuddy CN/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('MANPAGER', 'cat'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('AMENT_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/ros_test/install/main_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('MXC_BIN_DIR', '/home/unique/.vscode-server/bin/fc3def6774c76082adf699d366f31a557ce5573f/node_modules/@microsoft/mxc-sdk/bin'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GIT_PAGER', 'cat'), ('PWD', '/home/unique/ros2_ws/ros_test/build/IOqueue'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('COPILOT_CLI_ENABLED_FEATURE_FLAGS', 'SHELL_SPAWN_BACKEND'), ('HOSTTYPE', 'x86_64'), ('EDITOR', 'cat'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/ros_test/install/main_interface:/opt/ros/humble')]), 'shell': False}
+[0.452820] (IOringbuffer) JobProgress: {'identifier': 'IOringbuffer', 'progress': 'cmake'}
+[0.453220] (IOringbuffer) JobProgress: {'identifier': 'IOringbuffer', 'progress': 'build'}
+[0.453805] (IOringbuffer) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/unique/ros2_ws/ros_test/build/IOringbuffer', '--', '-j8', '-l8'], 'cwd': '/home/unique/ros2_ws/ros_test/build/IOringbuffer', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('VSCODE_CWD', '/mnt/d/Program Files/Microsoft VS Code'), ('VSCODE_ESM_ENTRYPOINT', 'vs/workbench/api/node/extensionHostProcess'), ('USER', 'unique'), ('VSCODE_NLS_CONFIG', '{"userLocale":"zh-cn","osLocale":"zh-cn","resolvedLanguage":"zh-cn","defaultMessagesFile":"/home/unique/.vscode-server/bin/fc3def6774c76082adf699d366f31a557ce5573f/out/nls.messages.json","languagePack":{"translationsConfigFile":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn/tcf.json","messagesFile":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn/fc3def6774c76082adf699d366f31a557ce5573f/nls.messages.json","corruptMarkerFile":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn/corrupted.info"},"locale":"zh-cn","availableLanguages":{"*":"zh-cn"},"_languagePackId":"95a1d175239d220149ee2b7c238e7810.zh-cn","_languagePackSupport":true,"_translationsConfigFile":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn/tcf.json","_cacheRoot":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn","_resolvedLanguagePackCoreLocation":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn/fc3def6774c76082adf699d366f31a557ce5573f","_corruptedFile":"/home/unique/.vscode-server/data/clp/95a1d175239d220149ee2b7c238e7810.zh-cn/corrupted.info"}'), ('SYSTEMD_PAGER', ''), ('VSCODE_WSL_EXT_LOCATION', '/mnt/c/Users/23632/.vscode/extensions/ms-vscode-remote.remote-wsl-0.104.3'), ('VSCODE_HANDLES_UNCAUGHT_ERRORS', 'true'), ('SHLVL', '0'), ('LD_LIBRARY_PATH', '/home/unique/ros2_ws/ros_test/install/main_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('MOTD_SHOWN', 'update-motd'), ('HOME', '/home/unique'), ('OLDPWD', '/home/unique/ros2_ws/ros_test'), ('CODEBUDDY_COPILOT_INTERNET_ENVIRONMENT', 'internal'), ('RUSTUP_UPDATE_ROOT', 'https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup'), ('VSCODE_RECONNECTION_GRACE_TIME', '10800000'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-bdaca235-7042-42ba-bf47-dcab5277cd3e.sock'), ('PYTHONUNBUFFERED', '1'), ('STDBUF_O', 'L'), ('ROS_PYTHON_VERSION', '3'), ('PAGER', 'cat'), ('COPILOT_OTEL_FILE_EXPORTER_PATH', '/dev/null'), ('RUSTUP_DIST_SERVER', 'https://mirrors.tuna.tsinghua.edu.cn/rustup'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('VSCODE_L10N_BUNDLE_LOCATION', 'vscode-local:/c%3A/Users/23632/.vscode/extensions/ms-ceintl.vscode-language-pack-zh-hans-1.128.2026070703/translations/extensions/vscode.json-language-features.i18n.json'), ('APPLICATION_INSIGHTS_NO_STATSBEAT', 'true'), ('ROS_DISTRO', 'humble'), ('RUBY_UNBUFFERED', '1'), ('LOGNAME', 'unique'), ('NAME', 'TBunique'), ('WSL_INTEROP', '/run/WSL/417_interop'), ('VSCODE_HANDLES_SIGPIPE', 'true'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unique/.vscode-server/bin/fc3def6774c76082adf699d366f31a557ce5573f/bin/remote-cli:/home/unique/.local/bin:/home/unique/.cargo/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/d/3VMWare/bin/:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Strawberry/c/bin:/mnt/c/Strawberry/perl/site/bin:/mnt/c/Strawberry/perl/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x86/:/mnt/d/msys64/usr/bin:/mnt/d/msys64/mingw64/bin:/mnt/c/Users/23632/AppData/Local/uv/bin:/mnt/c/Program Files/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/nvm:/mnt/c/Program Files/nodejs:/mnt/d/Program Files/Git/cmd:/mnt/d/Python/Scripts/:/mnt/d/Python/:/mnt/c/Users/23632/.moon/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Users/23632/.cargo/bin:/mnt/c/Users/23632/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/23632/.dotnet/tools:/mnt/d/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64:/mnt/c/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64:/mnt/d/Program Files/Tesseract-OCR:/mnt/c/Users/23632/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/23632/AppData/Local/Programs/Ollama:/mnt/d/Program Files/JetBrains/RustRover 2024.3.7/bin:/mnt/d/3_Flutter/flutter/bin:/mnt/d/Program Files/CodeBuddy CN/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('MANPAGER', 'cat'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('AMENT_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/ros_test/install/main_interface:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('MXC_BIN_DIR', '/home/unique/.vscode-server/bin/fc3def6774c76082adf699d366f31a557ce5573f/node_modules/@microsoft/mxc-sdk/bin'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GIT_PAGER', 'cat'), ('PWD', '/home/unique/ros2_ws/ros_test/build/IOringbuffer'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unique/ros2_ws/ros_test/install/main_interface/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('COPILOT_CLI_ENABLED_FEATURE_FLAGS', 'SHELL_SPAWN_BACKEND'), ('HOSTTYPE', 'x86_64'), ('EDITOR', 'cat'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up'), ('CMAKE_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/ros_test/install/main_interface:/opt/ros/humble')]), 'shell': False}
+[0.496237] (test_loopback) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.502242] (-) TimerEvent: {}
+[0.514758] (IOqueue) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.515398] (IOringbuffer) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.602639] (-) TimerEvent: {}
+[0.703338] (-) TimerEvent: {}
+[0.745648] (test_loopback) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.760534] (test_loopback) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.764904] (IOringbuffer) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.779950] (IOqueue) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.803874] (-) TimerEvent: {}
+[0.906861] (-) TimerEvent: {}
+[1.009066] (-) TimerEvent: {}
+[1.110688] (-) TimerEvent: {}
+[1.136947] (test_loopback) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.142671] (test_loopback) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.150647] (IOringbuffer) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.155765] (test_loopback) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.156288] (IOringbuffer) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.169614] (IOringbuffer) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.173634] (test_loopback) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.184814] (IOringbuffer) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.191612] (test_loopback) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.206999] (IOringbuffer) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.211101] (-) TimerEvent: {}
+[1.245191] (test_loopback) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.247315] (test_loopback) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.258639] (IOringbuffer) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.260671] (IOringbuffer) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.295985] (IOqueue) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.299886] (IOqueue) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.309299] (IOqueue) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.311372] (-) TimerEvent: {}
+[1.322725] (IOqueue) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.341279] (IOqueue) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.389525] (IOqueue) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.392078] (IOqueue) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.411901] (-) TimerEvent: {}
+[1.512282] (-) TimerEvent: {}
+[1.612857] (-) TimerEvent: {}
+[1.713937] (-) TimerEvent: {}
+[1.816479] (-) TimerEvent: {}
+[1.919176] (-) TimerEvent: {}
+[2.021820] (-) TimerEvent: {}
+[2.124174] (-) TimerEvent: {}
+[2.226780] (-) TimerEvent: {}
+[2.329277] (-) TimerEvent: {}
+[2.429847] (-) TimerEvent: {}
+[2.531724] (-) TimerEvent: {}
+[2.636066] (-) TimerEvent: {}
+[2.736504] (-) TimerEvent: {}
+[2.837424] (-) TimerEvent: {}
+[2.939849] (-) TimerEvent: {}
+[3.040194] (-) TimerEvent: {}
+[3.140523] (-) TimerEvent: {}
+[3.240855] (-) TimerEvent: {}
+[3.342377] (-) TimerEvent: {}
+[3.444141] (-) TimerEvent: {}
+[3.544512] (-) TimerEvent: {}
+[3.644901] (-) TimerEvent: {}
+[3.745351] (-) TimerEvent: {}
+[3.845919] (-) TimerEvent: {}
+[3.946774] (-) TimerEvent: {}
+[4.047744] (-) TimerEvent: {}
+[4.148194] (-) TimerEvent: {}
+[4.249035] (-) TimerEvent: {}
+[4.349446] (-) TimerEvent: {}
+[4.449874] (-) TimerEvent: {}
+[4.550584] (-) TimerEvent: {}
+[4.651093] (-) TimerEvent: {}
+[4.751655] (-) TimerEvent: {}
+[4.852029] (-) TimerEvent: {}
+[4.952407] (-) TimerEvent: {}
+[5.052884] (-) TimerEvent: {}
+[5.153345] (-) TimerEvent: {}
+[5.253845] (-) TimerEvent: {}
+[5.355812] (-) TimerEvent: {}
+[5.456138] (-) TimerEvent: {}
+[5.557464] (-) TimerEvent: {}
+[5.657921] (-) TimerEvent: {}
+[5.758374] (-) TimerEvent: {}
+[5.859045] (-) TimerEvent: {}
+[5.959747] (-) TimerEvent: {}
+[6.060872] (-) TimerEvent: {}
+[6.161677] (-) TimerEvent: {}
+[6.262182] (-) TimerEvent: {}
+[6.362705] (-) TimerEvent: {}
+[6.465446] (-) TimerEvent: {}
+[6.568104] (-) TimerEvent: {}
+[6.670825] (-) TimerEvent: {}
+[6.773598] (-) TimerEvent: {}
+[6.876145] (-) TimerEvent: {}
+[6.978788] (-) TimerEvent: {}
+[7.079234] (-) TimerEvent: {}
+[7.179729] (-) TimerEvent: {}
+[7.280071] (-) TimerEvent: {}
+[7.380432] (-) TimerEvent: {}
+[7.480943] (-) TimerEvent: {}
+[7.581461] (-) TimerEvent: {}
+[7.683655] (-) TimerEvent: {}
+[7.783990] (-) TimerEvent: {}
+[7.884522] (-) TimerEvent: {}
+[7.985096] (-) TimerEvent: {}
+[8.085754] (-) TimerEvent: {}
+[8.186215] (-) TimerEvent: {}
+[8.287048] (-) TimerEvent: {}
+[8.387757] (-) TimerEvent: {}
+[8.488060] (-) TimerEvent: {}
+[8.588390] (-) TimerEvent: {}
+[8.688745] (-) TimerEvent: {}
+[8.789183] (-) TimerEvent: {}
+[8.889682] (-) TimerEvent: {}
+[8.990275] (-) TimerEvent: {}
+[9.091003] (-) TimerEvent: {}
+[9.191581] (-) TimerEvent: {}
+[9.291895] (-) TimerEvent: {}
+[9.392232] (-) TimerEvent: {}
+[9.454670] (IOringbuffer) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[9.492621] (-) TimerEvent: {}
+[9.516540] (IOringbuffer) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.19 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[9.537326] (IOringbuffer) StdoutLine: {'line': b'-- Found realtime_common: 0.0.0 (/home/unique/ros2_ws/ros_test/install/realtime_common/share/realtime_common/cmake)\n'}
+[9.538825] (IOringbuffer) StdoutLine: {'line': b'-- Found main_interface: 0.0.0 (/home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake)\n'}
+[9.553199] (IOringbuffer) StderrLine: {'line': b'CMake Error at /opt/ros/humble/share/rclcpp_components/cmake/rclcpp_components_register_node.cmake:40 (message):\n'}
+[9.553463] (IOringbuffer) StderrLine: {'line': b'  rclcpp_components_register_node macro requires a EXECUTABLE argument for\n'}
+[9.553564] (IOringbuffer) StderrLine: {'line': b'  target IOringbuffer\n'}
+[9.553674] (IOringbuffer) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[9.553831] (IOringbuffer) StderrLine: {'line': b'  CMakeLists.txt:46 (rclcpp_components_register_node)\n'}
+[9.553928] (IOringbuffer) StderrLine: {'line': b'\n'}
+[9.554013] (IOringbuffer) StderrLine: {'line': b'\n'}
+[9.554101] (IOringbuffer) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[9.554193] (IOringbuffer) StdoutLine: {'line': b'See also "/home/unique/ros2_ws/ros_test/build/IOringbuffer/CMakeFiles/CMakeOutput.log".\n'}
+[9.565446] (IOringbuffer) StderrLine: {'line': b'gmake: *** [Makefile:267: cmake_check_build_system] Error 1\n'}
+[9.569288] (IOringbuffer) CommandEnded: {'returncode': 2}
+[9.586704] (IOringbuffer) JobEnded: {'identifier': 'IOringbuffer', 'rc': 2}
+[9.592859] (-) TimerEvent: {}
+[9.694006] (-) TimerEvent: {}
+[9.795115] (-) TimerEvent: {}
+[9.895621] (-) TimerEvent: {}
+[9.996211] (-) TimerEvent: {}
+[10.096554] (-) TimerEvent: {}
+[10.196888] (-) TimerEvent: {}
+[10.297233] (-) TimerEvent: {}
+[10.397633] (-) TimerEvent: {}
+[10.498272] (-) TimerEvent: {}
+[10.599229] (-) TimerEvent: {}
+[10.700188] (-) TimerEvent: {}
+[10.800702] (-) TimerEvent: {}
+[10.901085] (-) TimerEvent: {}
+[11.001685] (-) TimerEvent: {}
+[11.102213] (-) TimerEvent: {}
+[11.203666] (-) TimerEvent: {}
+[11.304081] (-) TimerEvent: {}
+[11.406875] (-) TimerEvent: {}
+[11.509604] (-) TimerEvent: {}
+[11.610256] (-) TimerEvent: {}
+[11.711039] (-) TimerEvent: {}
+[11.813718] (-) TimerEvent: {}
+[11.892783] (test_loopback) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[11.915141] (-) TimerEvent: {}
+[11.940304] (test_loopback) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.19 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[11.958655] (test_loopback) StdoutLine: {'line': b'-- Found main_interface: 0.0.0 (/home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake)\n'}
+[11.972002] (test_loopback) StderrLine: {'line': b'CMake Error at /opt/ros/humble/share/rclcpp_components/cmake/rclcpp_components_register_node.cmake:40 (message):\n'}
+[11.972514] (test_loopback) StderrLine: {'line': b'  rclcpp_components_register_node macro requires a EXECUTABLE argument for\n'}
+[11.972596] (test_loopback) StderrLine: {'line': b'  target test_loopback\n'}
+[11.972653] (test_loopback) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[11.972730] (test_loopback) StderrLine: {'line': b'  CMakeLists.txt:44 (rclcpp_components_register_node)\n'}
+[11.972810] (test_loopback) StderrLine: {'line': b'\n'}
+[11.972873] (test_loopback) StderrLine: {'line': b'\n'}
+[11.972937] (test_loopback) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[11.973007] (test_loopback) StdoutLine: {'line': b'See also "/home/unique/ros2_ws/ros_test/build/test_loopback/CMakeFiles/CMakeOutput.log".\n'}
+[11.982806] (test_loopback) StderrLine: {'line': b'gmake: *** [Makefile:267: cmake_check_build_system] Error 1\n'}
+[11.985509] (test_loopback) JobEnded: {'identifier': 'test_loopback', 'rc': 'SIGINT'}
+[12.015528] (-) TimerEvent: {}
+[12.117488] (-) TimerEvent: {}
+[12.219360] (-) TimerEvent: {}
+[12.320148] (-) TimerEvent: {}
+[12.421738] (-) TimerEvent: {}
+[12.523646] (-) TimerEvent: {}
+[12.623923] (-) TimerEvent: {}
+[12.725980] (-) TimerEvent: {}
+[12.828245] (-) TimerEvent: {}
+[12.928851] (-) TimerEvent: {}
+[13.029483] (-) TimerEvent: {}
+[13.117532] (IOqueue) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[13.130407] (-) TimerEvent: {}
+[13.168602] (IOqueue) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.19 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[13.188922] (IOqueue) StdoutLine: {'line': b'-- Found realtime_common: 0.0.0 (/home/unique/ros2_ws/ros_test/install/realtime_common/share/realtime_common/cmake)\n'}
+[13.190925] (IOqueue) StdoutLine: {'line': b'-- Found main_interface: 0.0.0 (/home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake)\n'}
+[13.208643] (IOqueue) StderrLine: {'line': b'CMake Error at /opt/ros/humble/share/rclcpp_components/cmake/rclcpp_components_register_node.cmake:40 (message):\n'}
+[13.208997] (IOqueue) StderrLine: {'line': b'  rclcpp_components_register_node macro requires a EXECUTABLE argument for\n'}
+[13.209185] (IOqueue) StderrLine: {'line': b'  target IOqueue\n'}
+[13.209282] (IOqueue) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[13.209423] (IOqueue) StderrLine: {'line': b'  CMakeLists.txt:46 (rclcpp_components_register_node)\n'}
+[13.209550] (IOqueue) StderrLine: {'line': b'\n'}
+[13.209691] (IOqueue) StderrLine: {'line': b'\n'}
+[13.209799] (IOqueue) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[13.209894] (IOqueue) StdoutLine: {'line': b'See also "/home/unique/ros2_ws/ros_test/build/IOqueue/CMakeFiles/CMakeOutput.log".\n'}
+[13.224973] (IOqueue) StderrLine: {'line': b'gmake: *** [Makefile:267: cmake_check_build_system] Error 1\n'}
+[13.228026] (IOqueue) JobEnded: {'identifier': 'IOqueue', 'rc': 'SIGINT'}
+[13.230620] (-) TimerEvent: {}
+[13.238868] (-) EventReactorShutdown: {}

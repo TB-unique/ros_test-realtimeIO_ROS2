@@ -1,0 +1,5 @@
+[31mCMake Error at CMakeLists.txt:15 (target_include_directories):
+  target_include_directories may only set INTERFACE properties on INTERFACE
+  targets
+
+[0m

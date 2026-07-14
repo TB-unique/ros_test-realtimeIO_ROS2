@@ -1,0 +1,177 @@
+[0.561s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'low_prior']
+[0.561s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['low_prior'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7b5416b3f460>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x7b5416c8c940>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x7b5416c8c940>>)
+[0.845s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.846s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.846s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.846s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.846s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.846s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.846s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/unique/ros2_ws/ros_test'
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.846s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.847s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.865s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.866s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.866s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.866s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.866s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.866s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.867s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.867s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.867s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.867s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.867s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.867s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.867s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.868s] Level 1:colcon.colcon_core.package_identification:_identify(src/high_prior) by extensions ['ignore', 'ignore_ament_install']
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/high_prior) by extension 'ignore'
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/high_prior) by extension 'ignore_ament_install'
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/high_prior) by extensions ['colcon_pkg']
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/high_prior) by extension 'colcon_pkg'
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/high_prior) by extensions ['colcon_meta']
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/high_prior) by extension 'colcon_meta'
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/high_prior) by extensions ['ros']
+[0.869s] Level 1:colcon.colcon_core.package_identification:_identify(src/high_prior) by extension 'ros'
+[0.886s] DEBUG:colcon.colcon_core.package_identification:Package 'src/high_prior' with type 'ros.ament_cmake' and name 'high_prior'
+[0.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/low_prior) by extensions ['ignore', 'ignore_ament_install']
+[0.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/low_prior) by extension 'ignore'
+[0.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/low_prior) by extension 'ignore_ament_install'
+[0.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/low_prior) by extensions ['colcon_pkg']
+[0.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/low_prior) by extension 'colcon_pkg'
+[0.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/low_prior) by extensions ['colcon_meta']
+[0.887s] Level 1:colcon.colcon_core.package_identification:_identify(src/low_prior) by extension 'colcon_meta'
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/low_prior) by extensions ['ros']
+[0.888s] Level 1:colcon.colcon_core.package_identification:_identify(src/low_prior) by extension 'ros'
+[0.889s] DEBUG:colcon.colcon_core.package_identification:Package 'src/low_prior' with type 'ros.ament_cmake' and name 'low_prior'
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_common) by extensions ['ignore', 'ignore_ament_install']
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_common) by extension 'ignore'
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_common) by extension 'ignore_ament_install'
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_common) by extensions ['colcon_pkg']
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_common) by extension 'colcon_pkg'
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_common) by extensions ['colcon_meta']
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_common) by extension 'colcon_meta'
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_common) by extensions ['ros']
+[0.889s] Level 1:colcon.colcon_core.package_identification:_identify(src/realtime_common) by extension 'ros'
+[0.890s] DEBUG:colcon.colcon_core.package_identification:Package 'src/realtime_common' with type 'ros.ament_cmake' and name 'realtime_common'
+[0.890s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.890s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.890s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.891s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.891s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.927s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'high_prior' in 'src/high_prior'
+[0.927s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'realtime_common' in 'src/realtime_common'
+[0.928s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.928s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.932s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /home/unique/ros2_ws/ros_test/install
+[0.933s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/unique/ros2_ws/install
+[0.934s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 21 installed packages in /home/unique/ros2_ws/ros2_21_tutorials/install
+[0.936s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 275 installed packages in /opt/ros/humble
+[0.938s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'low_prior' build argument 'cmake_args' from command line to 'None'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'low_prior' build argument 'cmake_target' from command line to 'None'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'low_prior' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'low_prior' build argument 'cmake_clean_cache' from command line to 'False'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'low_prior' build argument 'cmake_clean_first' from command line to 'False'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'low_prior' build argument 'cmake_force_configure' from command line to 'False'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'low_prior' build argument 'ament_cmake_args' from command line to 'None'
+[1.000s] Level 5:colcon.colcon_core.verb:set package 'low_prior' build argument 'catkin_cmake_args' from command line to 'None'
+[1.001s] Level 5:colcon.colcon_core.verb:set package 'low_prior' build argument 'catkin_skip_building_tests' from command line to 'False'
+[1.001s] DEBUG:colcon.colcon_core.verb:Building package 'low_prior' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/unique/ros2_ws/ros_test/build/low_prior', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/unique/ros2_ws/ros_test/install/low_prior', 'merge_install': False, 'path': '/home/unique/ros2_ws/ros_test/src/low_prior', 'symlink_install': False, 'test_result_base': None}
+[1.001s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[1.003s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[1.003s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/unique/ros2_ws/ros_test/src/low_prior' with build type 'ament_cmake'
+[1.004s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/unique/ros2_ws/ros_test/src/low_prior'
+[1.010s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[1.010s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[1.010s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[1.039s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/unique/ros2_ws/ros_test/build/low_prior': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble /usr/bin/cmake /home/unique/ros2_ws/ros_test/src/low_prior -DCMAKE_INSTALL_PREFIX=/home/unique/ros2_ws/ros_test/install/low_prior
+[19.809s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/unique/ros2_ws/ros_test/build/low_prior' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble /usr/bin/cmake /home/unique/ros2_ws/ros_test/src/low_prior -DCMAKE_INSTALL_PREFIX=/home/unique/ros2_ws/ros_test/install/low_prior
+[19.811s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/unique/ros2_ws/ros_test/build/low_prior': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble /usr/bin/cmake --build /home/unique/ros2_ws/ros_test/build/low_prior -- -j8 -l8
+[31.163s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/unique/ros2_ws/ros_test/build/low_prior' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble /usr/bin/cmake --build /home/unique/ros2_ws/ros_test/build/low_prior -- -j8 -l8
+[31.181s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/unique/ros2_ws/ros_test/build/low_prior': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble /usr/bin/cmake --install /home/unique/ros2_ws/ros_test/build/low_prior
+[31.213s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(low_prior)
+[31.215s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/unique/ros2_ws/ros_test/build/low_prior' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble /usr/bin/cmake --install /home/unique/ros2_ws/ros_test/build/low_prior
+[31.217s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/low_prior' for CMake module files
+[31.218s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/low_prior' for CMake config files
+[31.218s] Level 1:colcon.colcon_core.shell:create_environment_hook('low_prior', 'cmake_prefix_path')
+[31.219s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/hook/cmake_prefix_path.ps1'
+[31.220s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/hook/cmake_prefix_path.dsv'
+[31.220s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/hook/cmake_prefix_path.sh'
+[31.221s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/low_prior/lib'
+[31.221s] Level 1:colcon.colcon_core.shell:create_environment_hook('low_prior', 'ld_library_path_lib')
+[31.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/hook/ld_library_path_lib.ps1'
+[31.222s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/hook/ld_library_path_lib.dsv'
+[31.222s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/hook/ld_library_path_lib.sh'
+[31.223s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/low_prior/bin'
+[31.223s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/low_prior/lib/pkgconfig/low_prior.pc'
+[31.223s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/low_prior/lib/python3.10/site-packages'
+[31.224s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/low_prior/bin'
+[31.224s] INFO:colcon.colcon_core.shell:Creating package script '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/package.ps1'
+[31.225s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/package.dsv'
+[31.225s] INFO:colcon.colcon_core.shell:Creating package script '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/package.sh'
+[31.226s] INFO:colcon.colcon_core.shell:Creating package script '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/package.bash'
+[31.227s] INFO:colcon.colcon_core.shell:Creating package script '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/package.zsh'
+[31.228s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/unique/ros2_ws/ros_test/install/low_prior/share/colcon-core/packages/low_prior)
+[31.229s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(low_prior)
+[31.229s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/low_prior' for CMake module files
+[31.230s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/low_prior' for CMake config files
+[31.230s] Level 1:colcon.colcon_core.shell:create_environment_hook('low_prior', 'cmake_prefix_path')
+[31.230s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/hook/cmake_prefix_path.ps1'
+[31.231s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/hook/cmake_prefix_path.dsv'
+[31.231s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/hook/cmake_prefix_path.sh'
+[31.232s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/low_prior/lib'
+[31.232s] Level 1:colcon.colcon_core.shell:create_environment_hook('low_prior', 'ld_library_path_lib')
+[31.232s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/hook/ld_library_path_lib.ps1'
+[31.233s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/hook/ld_library_path_lib.dsv'
+[31.233s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/hook/ld_library_path_lib.sh'
+[31.234s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/low_prior/bin'
+[31.234s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/low_prior/lib/pkgconfig/low_prior.pc'
+[31.234s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/low_prior/lib/python3.10/site-packages'
+[31.234s] Level 1:colcon.colcon_core.environment:checking '/home/unique/ros2_ws/ros_test/install/low_prior/bin'
+[31.235s] INFO:colcon.colcon_core.shell:Creating package script '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/package.ps1'
+[31.235s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/package.dsv'
+[31.236s] INFO:colcon.colcon_core.shell:Creating package script '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/package.sh'
+[31.236s] INFO:colcon.colcon_core.shell:Creating package script '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/package.bash'
+[31.237s] INFO:colcon.colcon_core.shell:Creating package script '/home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/package.zsh'
+[31.237s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/unique/ros2_ws/ros_test/install/low_prior/share/colcon-core/packages/low_prior)
+[31.238s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[31.239s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[31.239s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[31.239s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[31.352s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.notify_send': Could not find 'notify-send'
+[31.352s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[31.353s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[31.353s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[31.353s] DEBUG:colcon.colcon_notification.desktop_notification.notify2:Failed to initialize notify2: org.freedesktop.DBus.Error.FileNotFound: Failed to connect to socket /run/user/1000/bus: No such file or directory
+[31.353s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[31.353s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/unique/ros2_ws/ros_test/install/local_setup.ps1'
+[31.355s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/unique/ros2_ws/ros_test/install/_local_setup_util_ps1.py'
+[31.356s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/unique/ros2_ws/ros_test/install/setup.ps1'
+[31.358s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/unique/ros2_ws/ros_test/install/local_setup.sh'
+[31.359s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/unique/ros2_ws/ros_test/install/_local_setup_util_sh.py'
+[31.359s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/unique/ros2_ws/ros_test/install/setup.sh'
+[31.362s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/unique/ros2_ws/ros_test/install/local_setup.bash'
+[31.362s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/unique/ros2_ws/ros_test/install/setup.bash'
+[31.364s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/unique/ros2_ws/ros_test/install/local_setup.zsh'
+[31.365s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/unique/ros2_ws/ros_test/install/setup.zsh'

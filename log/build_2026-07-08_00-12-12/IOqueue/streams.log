@@ -1,0 +1,32 @@
+[0.277s] Invoking command in '/home/unique/ros2_ws/ros_test/build/IOqueue': CMAKE_PREFIX_PATH=/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/ros_test/install/main_interface:/home/unique/ros2_ws/ros_test/install/realtime_launch:/home/unique/ros2_ws/ros_test/install/low_prior:/home/unique/ros2_ws/ros_test/install/high_prior:/home/unique/ros2_ws/install/village_wang:/home/unique/ros2_ws/install/village_interface:/home/unique/ros2_ws/install/my_cpp_pkg:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_c:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble LD_LIBRARY_PATH=/home/unique/ros2_ws/ros_test/install/main_interface/lib:/home/unique/ros2_ws/ros_test/install/low_prior/lib:/home/unique/ros2_ws/ros_test/install/high_prior/lib:/home/unique/ros2_ws/install/village_interface/lib:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib /usr/bin/cmake --build /home/unique/ros2_ws/ros_test/build/IOqueue -- -j8 -l8
+[0.303s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.445s] -- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)
+[0.661s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.663s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.668s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.677s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.687s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.715s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.716s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[5.153s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[5.192s] -- Found realtime_common: 0.0.0 (/home/unique/ros2_ws/ros_test/install/realtime_common/share/realtime_common/cmake)
+[5.193s] -- Found main_interface: 0.0.0 (/home/unique/ros2_ws/ros_test/install/main_interface/share/main_interface/cmake)
+[5.202s] -- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[5.262s] WARNING: Package name "IOqueue" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[5.282s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[5.282s] -- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/unique/ros2_ws/ros_test/src/IOqueue/include>
+[5.282s] -- Configured cppcheck exclude dirs and/or files: 
+[5.283s] -- Added test 'lint_cmake' to check CMake code style
+[5.284s] -- Added test 'uncrustify' to check C / C++ code style
+[5.284s] -- Configured uncrustify additional arguments: 
+[5.284s] -- Added test 'xmllint' to check XML markup files
+[5.285s] -- Configuring done
+[5.289s] [31mCMake Error at CMakeLists.txt:14 (add_library):
+[5.289s]   Target "IOqueue" links to target "main_interface::main_interface" but the
+[5.289s]   target was not found.  Perhaps a find_package() call is missing for an
+[5.289s]   IMPORTED target, or an ALIAS target is missing?
+[5.289s] 
+[5.289s] [0m
+[5.294s] -- Generating done
+[5.295s] [0mCMake Generate step failed.  Build files cannot be regenerated correctly.[0m
+[5.304s] gmake: *** [Makefile:267: cmake_check_build_system] Error 1

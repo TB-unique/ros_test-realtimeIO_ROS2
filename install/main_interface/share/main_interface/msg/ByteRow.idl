@@ -1,0 +1,12 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from main_interface/msg/ByteRow.msg
+// generated code does not contain a copyright notice
+
+
+module main_interface {
+  module msg {
+    struct ByteRow {
+      sequence<uint8> data;
+    };
+  };
+};

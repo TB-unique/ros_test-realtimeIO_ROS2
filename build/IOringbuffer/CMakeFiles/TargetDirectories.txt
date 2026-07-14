@@ -1,0 +1,11 @@
+/home/unique/ros2_ws/ros_test/build/IOringbuffer/CMakeFiles/uninstall.dir
+/home/unique/ros2_ws/ros_test/build/IOringbuffer/CMakeFiles/IOringbuffer_uninstall.dir
+/home/unique/ros2_ws/ros_test/build/IOringbuffer/CMakeFiles/IOringbuffer.dir
+/home/unique/ros2_ws/ros_test/build/IOringbuffer/CMakeFiles/IOringbuffer_node.dir
+/home/unique/ros2_ws/ros_test/build/IOringbuffer/CMakeFiles/test.dir
+/home/unique/ros2_ws/ros_test/build/IOringbuffer/CMakeFiles/edit_cache.dir
+/home/unique/ros2_ws/ros_test/build/IOringbuffer/CMakeFiles/rebuild_cache.dir
+/home/unique/ros2_ws/ros_test/build/IOringbuffer/CMakeFiles/list_install_components.dir
+/home/unique/ros2_ws/ros_test/build/IOringbuffer/CMakeFiles/install.dir
+/home/unique/ros2_ws/ros_test/build/IOringbuffer/CMakeFiles/install/local.dir
+/home/unique/ros2_ws/ros_test/build/IOringbuffer/CMakeFiles/install/strip.dir

@@ -1,0 +1,4 @@
+source;share/low_prior/local_setup.bash
+source;share/low_prior/local_setup.dsv
+source;share/low_prior/local_setup.sh
+source;share/low_prior/local_setup.zsh

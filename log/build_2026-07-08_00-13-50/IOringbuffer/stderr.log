@@ -1,0 +1,8 @@
+WARNING: Package name "IOringbuffer" does not follow the naming conventions. It should start with a lower case letter and only contain lower case letters, digits, underscores, and dashes.
+[01m[K/home/unique/ros2_ws/ros_test/src/IOringbuffer/src/IOringbuffer.cpp:185:10:[m[K [01;31m[Kfatal error: [m[Krclcpp_components/register_node_macro.hpp: No such file or directory
+  185 | #include [01;31m[K"rclcpp_components/register_node_macro.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/IOringbuffer.dir/build.make:76: CMakeFiles/IOringbuffer.dir/src/IOringbuffer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/IOringbuffer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

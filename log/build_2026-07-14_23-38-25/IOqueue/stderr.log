@@ -1,0 +1,8 @@
+[01m[K/home/unique/ros2_ws/ros_test/src/IOqueue/src/IOqueue.cpp:[m[K In member function ‘[01m[Kvoid io_queue::IOqueue::read_io_thread()[m[K’:
+[01m[K/home/unique/ros2_ws/ros_test/src/IOqueue/src/IOqueue.cpp:182:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kstart[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  182 |     auto [01;35m[Kstart[m[K = clock::now();
+      |          [01;35m[K^~~~~[m[K
+[01m[K/home/unique/ros2_ws/ros_test/src/IOqueue/src/IOqueue.cpp:[m[K In member function ‘[01m[Kvoid io_queue::IOqueue::write_io_thread()[m[K’:
+[01m[K/home/unique/ros2_ws/ros_test/src/IOqueue/src/IOqueue.cpp:255:10:[m[K [01;35m[Kwarning: [m[Kvariable ‘[01m[Kstart[m[K’ set but not used [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-but-set-variable-Wunused-but-set-variable]8;;[m[K]
+  255 |     auto [01;35m[Kstart[m[K = clock::now();
+      |          [01;35m[K^~~~~[m[K

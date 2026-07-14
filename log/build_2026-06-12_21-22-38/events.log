@@ -1,0 +1,384 @@
+[0.000000] (-) TimerEvent: {}
+[0.000781] (-) JobUnselected: {'identifier': 'high_prior'}
+[0.002293] (-) JobUnselected: {'identifier': 'realtime_common'}
+[0.002428] (low_prior) JobQueued: {'identifier': 'low_prior', 'dependencies': OrderedDict()}
+[0.002877] (low_prior) JobStarted: {'identifier': 'low_prior'}
+[0.023272] (low_prior) JobProgress: {'identifier': 'low_prior', 'progress': 'cmake'}
+[0.025428] (low_prior) Command: {'cmd': ['/usr/bin/cmake', '/home/unique/ros2_ws/ros_test/src/low_prior', '-DCMAKE_INSTALL_PREFIX=/home/unique/ros2_ws/ros_test/install/low_prior'], 'cwd': '/home/unique/ros2_ws/ros_test/build/low_prior', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unique'), ('GIT_ASKPASS', '/home/unique/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_common/lib:/home/unique/ros2_ws/install/village_interface/lib:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/unique'), ('OLDPWD', '/home/unique/ros2_ws/ros_test/src'), ('TERM_PROGRAM_VERSION', '1.123.0'), ('RUSTUP_UPDATE_ROOT', 'https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-20e2ca4d-8c92-4c05-b0ed-a679bde46b4c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/unique/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/unique/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('RUSTUP_DIST_SERVER', 'https://mirrors.tuna.tsinghua.edu.cn/rustup'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install:/home/unique/ros2_ws/install:/home/unique/ros2_ws/ros2_21_tutorials/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'unique'), ('NAME', 'TBunique'), ('WSL_INTEROP', '/run/WSL/9335_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unique/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/unique/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/unique/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/bin/remote-cli:/home/unique/.local/bin:/home/unique/.cargo/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/d/3VMWare/bin/:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Strawberry/c/bin:/mnt/c/Strawberry/perl/site/bin:/mnt/c/Strawberry/perl/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x86/:/mnt/d/msys64/usr/bin:/mnt/d/msys64/mingw64/bin:/mnt/c/Users/23632/AppData/Local/uv/bin:/mnt/c/Program Files/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/nvm:/mnt/c/Program Files/nodejs:/mnt/d/Program Files/Git/cmd:/mnt/d/Python/Scripts/:/mnt/d/Python/:/mnt/c/Users/23632/.moon/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Users/23632/.cargo/bin:/mnt/c/Users/23632/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/23632/.dotnet/tools:/mnt/d/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64:/mnt/c/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64:/mnt/d/Program Files/Tesseract-OCR:/mnt/c/Users/23632/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/23632/AppData/Local/Programs/Ollama:/mnt/d/Program Files/JetBrains/RustRover 2024.3.7/bin:/mnt/d/3_Flutter/flutter/bin:/mnt/d/Program Files/CodeBuddy CN/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2d50286631.sock'), ('TERM_PROGRAM', 'vscode'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('AMENT_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/install/village_wang:/home/unique/ros2_ws/install/village_interface:/home/unique/ros2_ws/install/my_cpp_pkg:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_c:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/unique/ros2_ws/ros_test/build/low_prior'), ('COPILOT_DEBUG_NONCE', '5d901767bafdd9f73c7d9e0f0be861af'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unique/ros2_ws/install/village_interface/local/lib/python3.10/dist-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface/local/lib/python3.10/dist-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/install/village_wang:/home/unique/ros2_ws/install/village_interface:/home/unique/ros2_ws/install/my_cpp_pkg:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_c:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[0.098576] (-) TimerEvent: {}
+[0.199173] (-) TimerEvent: {}
+[0.299713] (-) TimerEvent: {}
+[0.400317] (-) TimerEvent: {}
+[0.485303] (low_prior) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.500495] (-) TimerEvent: {}
+[0.601003] (-) TimerEvent: {}
+[0.701473] (-) TimerEvent: {}
+[0.801971] (-) TimerEvent: {}
+[0.902510] (-) TimerEvent: {}
+[1.003152] (-) TimerEvent: {}
+[1.103768] (-) TimerEvent: {}
+[1.204402] (-) TimerEvent: {}
+[1.304874] (-) TimerEvent: {}
+[1.405410] (-) TimerEvent: {}
+[1.506041] (-) TimerEvent: {}
+[1.606594] (-) TimerEvent: {}
+[1.707167] (-) TimerEvent: {}
+[1.807730] (-) TimerEvent: {}
+[1.908460] (-) TimerEvent: {}
+[2.009116] (-) TimerEvent: {}
+[2.109553] (-) TimerEvent: {}
+[2.125444] (low_prior) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[2.209780] (-) TimerEvent: {}
+[2.310329] (-) TimerEvent: {}
+[2.410891] (-) TimerEvent: {}
+[2.511366] (-) TimerEvent: {}
+[2.611881] (-) TimerEvent: {}
+[2.712340] (-) TimerEvent: {}
+[2.812811] (-) TimerEvent: {}
+[2.913518] (-) TimerEvent: {}
+[3.013982] (-) TimerEvent: {}
+[3.114531] (-) TimerEvent: {}
+[3.215221] (-) TimerEvent: {}
+[3.242724] (low_prior) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[3.315391] (-) TimerEvent: {}
+[3.415924] (-) TimerEvent: {}
+[3.516344] (-) TimerEvent: {}
+[3.571633] (low_prior) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[3.577564] (low_prior) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[3.577928] (low_prior) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[3.578853] (low_prior) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[3.583069] (low_prior) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[3.616511] (-) TimerEvent: {}
+[3.716963] (-) TimerEvent: {}
+[3.817431] (-) TimerEvent: {}
+[3.918011] (-) TimerEvent: {}
+[3.947531] (low_prior) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[3.953879] (low_prior) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[3.954324] (low_prior) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[3.954584] (low_prior) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[3.962383] (low_prior) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[4.018144] (-) TimerEvent: {}
+[4.118728] (-) TimerEvent: {}
+[4.172522] (low_prior) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[4.218878] (-) TimerEvent: {}
+[4.319260] (-) TimerEvent: {}
+[4.331084] (low_prior) StdoutLine: {'line': b'-- Found rclcpp: 16.0.19 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[4.419551] (-) TimerEvent: {}
+[4.520069] (-) TimerEvent: {}
+[4.620546] (-) TimerEvent: {}
+[4.706983] (low_prior) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[4.718719] (low_prior) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[4.720697] (-) TimerEvent: {}
+[4.734480] (low_prior) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[4.755160] (low_prior) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.781751] (low_prior) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.820902] (-) TimerEvent: {}
+[4.860099] (low_prior) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[4.867697] (low_prior) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[4.921085] (-) TimerEvent: {}
+[5.021593] (-) TimerEvent: {}
+[5.122007] (-) TimerEvent: {}
+[5.222408] (-) TimerEvent: {}
+[5.323021] (-) TimerEvent: {}
+[5.423626] (-) TimerEvent: {}
+[5.524110] (-) TimerEvent: {}
+[5.624537] (-) TimerEvent: {}
+[5.725040] (-) TimerEvent: {}
+[5.825560] (-) TimerEvent: {}
+[5.926040] (-) TimerEvent: {}
+[6.026746] (-) TimerEvent: {}
+[6.127294] (-) TimerEvent: {}
+[6.227717] (-) TimerEvent: {}
+[6.328205] (-) TimerEvent: {}
+[6.428755] (-) TimerEvent: {}
+[6.529467] (-) TimerEvent: {}
+[6.630051] (-) TimerEvent: {}
+[6.730651] (-) TimerEvent: {}
+[6.831284] (-) TimerEvent: {}
+[6.931912] (-) TimerEvent: {}
+[7.032575] (-) TimerEvent: {}
+[7.133219] (-) TimerEvent: {}
+[7.233794] (-) TimerEvent: {}
+[7.334420] (-) TimerEvent: {}
+[7.435423] (-) TimerEvent: {}
+[7.536078] (-) TimerEvent: {}
+[7.636977] (-) TimerEvent: {}
+[7.737531] (-) TimerEvent: {}
+[7.828481] (low_prior) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[7.837739] (-) TimerEvent: {}
+[7.938226] (-) TimerEvent: {}
+[8.038731] (-) TimerEvent: {}
+[8.139191] (-) TimerEvent: {}
+[8.239729] (-) TimerEvent: {}
+[8.340499] (-) TimerEvent: {}
+[8.441265] (-) TimerEvent: {}
+[8.541789] (-) TimerEvent: {}
+[8.642313] (-) TimerEvent: {}
+[8.743152] (-) TimerEvent: {}
+[8.843664] (-) TimerEvent: {}
+[8.944063] (-) TimerEvent: {}
+[9.045207] (-) TimerEvent: {}
+[9.145701] (-) TimerEvent: {}
+[9.246203] (-) TimerEvent: {}
+[9.346585] (-) TimerEvent: {}
+[9.447001] (-) TimerEvent: {}
+[9.547462] (-) TimerEvent: {}
+[9.648017] (-) TimerEvent: {}
+[9.748549] (-) TimerEvent: {}
+[9.849108] (-) TimerEvent: {}
+[9.949663] (-) TimerEvent: {}
+[10.050268] (-) TimerEvent: {}
+[10.150886] (-) TimerEvent: {}
+[10.251304] (-) TimerEvent: {}
+[10.351887] (-) TimerEvent: {}
+[10.452452] (-) TimerEvent: {}
+[10.552909] (-) TimerEvent: {}
+[10.653436] (-) TimerEvent: {}
+[10.753927] (-) TimerEvent: {}
+[10.854375] (-) TimerEvent: {}
+[10.954865] (-) TimerEvent: {}
+[11.055273] (-) TimerEvent: {}
+[11.155705] (-) TimerEvent: {}
+[11.256203] (-) TimerEvent: {}
+[11.356617] (-) TimerEvent: {}
+[11.427826] (low_prior) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[11.456799] (-) TimerEvent: {}
+[11.557212] (-) TimerEvent: {}
+[11.657635] (-) TimerEvent: {}
+[11.758051] (-) TimerEvent: {}
+[11.859116] (-) TimerEvent: {}
+[11.959664] (-) TimerEvent: {}
+[12.060174] (-) TimerEvent: {}
+[12.160616] (-) TimerEvent: {}
+[12.261238] (-) TimerEvent: {}
+[12.361757] (-) TimerEvent: {}
+[12.462211] (-) TimerEvent: {}
+[12.562726] (-) TimerEvent: {}
+[12.663437] (-) TimerEvent: {}
+[12.764086] (-) TimerEvent: {}
+[12.864579] (-) TimerEvent: {}
+[12.964997] (-) TimerEvent: {}
+[13.065482] (-) TimerEvent: {}
+[13.166039] (-) TimerEvent: {}
+[13.266550] (-) TimerEvent: {}
+[13.367042] (-) TimerEvent: {}
+[13.467639] (-) TimerEvent: {}
+[13.568077] (-) TimerEvent: {}
+[13.668656] (-) TimerEvent: {}
+[13.769121] (-) TimerEvent: {}
+[13.869755] (-) TimerEvent: {}
+[13.970453] (-) TimerEvent: {}
+[14.071136] (-) TimerEvent: {}
+[14.171757] (-) TimerEvent: {}
+[14.272417] (-) TimerEvent: {}
+[14.373114] (-) TimerEvent: {}
+[14.473848] (-) TimerEvent: {}
+[14.574530] (-) TimerEvent: {}
+[14.675594] (-) TimerEvent: {}
+[14.776473] (-) TimerEvent: {}
+[14.877054] (-) TimerEvent: {}
+[14.977647] (-) TimerEvent: {}
+[15.078181] (-) TimerEvent: {}
+[15.178762] (-) TimerEvent: {}
+[15.279233] (-) TimerEvent: {}
+[15.379770] (-) TimerEvent: {}
+[15.480265] (-) TimerEvent: {}
+[15.580761] (-) TimerEvent: {}
+[15.681254] (-) TimerEvent: {}
+[15.781825] (-) TimerEvent: {}
+[15.882385] (-) TimerEvent: {}
+[15.982997] (-) TimerEvent: {}
+[16.083781] (-) TimerEvent: {}
+[16.184573] (-) TimerEvent: {}
+[16.285180] (-) TimerEvent: {}
+[16.385797] (-) TimerEvent: {}
+[16.486477] (-) TimerEvent: {}
+[16.587133] (-) TimerEvent: {}
+[16.687883] (-) TimerEvent: {}
+[16.788552] (-) TimerEvent: {}
+[16.889159] (-) TimerEvent: {}
+[16.989800] (-) TimerEvent: {}
+[17.090361] (-) TimerEvent: {}
+[17.191055] (-) TimerEvent: {}
+[17.291718] (-) TimerEvent: {}
+[17.392392] (-) TimerEvent: {}
+[17.493070] (-) TimerEvent: {}
+[17.593774] (-) TimerEvent: {}
+[17.694798] (-) TimerEvent: {}
+[17.698365] (low_prior) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[17.726290] (low_prior) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[17.795064] (-) TimerEvent: {}
+[17.895983] (-) TimerEvent: {}
+[17.996793] (-) TimerEvent: {}
+[18.086087] (low_prior) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[18.086828] (low_prior) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[18.097233] (-) TimerEvent: {}
+[18.197919] (-) TimerEvent: {}
+[18.298530] (-) TimerEvent: {}
+[18.399526] (-) TimerEvent: {}
+[18.454918] (low_prior) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[18.456225] (low_prior) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[18.499684] (-) TimerEvent: {}
+[18.534337] (low_prior) StdoutLine: {'line': b'-- Found rclcpp_components: 16.0.19 (/opt/ros/humble/share/rclcpp_components/cmake)\n'}
+[18.578333] (low_prior) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.1 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[18.600058] (-) TimerEvent: {}
+[18.619209] (low_prior) StdoutLine: {'line': b'-- Found realtime_common: 0.0.0 (/home/unique/ros2_ws/ros_test/install/realtime_common/share/realtime_common/cmake)\n'}
+[18.633842] (low_prior) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[18.700357] (-) TimerEvent: {}
+[18.754893] (low_prior) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[18.755304] (low_prior) StdoutLine: {'line': b'-- Configured cppcheck include dirs: $<BUILD_INTERFACE:/home/unique/ros2_ws/ros_test/src/low_prior/include>\n'}
+[18.755467] (low_prior) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[18.757003] (low_prior) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[18.758950] (low_prior) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[18.759076] (low_prior) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[18.760189] (low_prior) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[18.763158] (low_prior) StdoutLine: {'line': b'-- Configuring done\n'}
+[18.781550] (low_prior) StdoutLine: {'line': b'-- Generating done\n'}
+[18.787185] (low_prior) StdoutLine: {'line': b'-- Build files have been written to: /home/unique/ros2_ws/ros_test/build/low_prior\n'}
+[18.800882] (-) TimerEvent: {}
+[18.801963] (low_prior) CommandEnded: {'returncode': 0}
+[18.806438] (low_prior) JobProgress: {'identifier': 'low_prior', 'progress': 'build'}
+[18.806568] (low_prior) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/unique/ros2_ws/ros_test/build/low_prior', '--', '-j8', '-l8'], 'cwd': '/home/unique/ros2_ws/ros_test/build/low_prior', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unique'), ('GIT_ASKPASS', '/home/unique/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_common/lib:/home/unique/ros2_ws/install/village_interface/lib:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/unique'), ('OLDPWD', '/home/unique/ros2_ws/ros_test/src'), ('TERM_PROGRAM_VERSION', '1.123.0'), ('RUSTUP_UPDATE_ROOT', 'https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-20e2ca4d-8c92-4c05-b0ed-a679bde46b4c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/unique/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/unique/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('RUSTUP_DIST_SERVER', 'https://mirrors.tuna.tsinghua.edu.cn/rustup'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install:/home/unique/ros2_ws/install:/home/unique/ros2_ws/ros2_21_tutorials/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'unique'), ('NAME', 'TBunique'), ('WSL_INTEROP', '/run/WSL/9335_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unique/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/unique/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/unique/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/bin/remote-cli:/home/unique/.local/bin:/home/unique/.cargo/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/d/3VMWare/bin/:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Strawberry/c/bin:/mnt/c/Strawberry/perl/site/bin:/mnt/c/Strawberry/perl/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x86/:/mnt/d/msys64/usr/bin:/mnt/d/msys64/mingw64/bin:/mnt/c/Users/23632/AppData/Local/uv/bin:/mnt/c/Program Files/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/nvm:/mnt/c/Program Files/nodejs:/mnt/d/Program Files/Git/cmd:/mnt/d/Python/Scripts/:/mnt/d/Python/:/mnt/c/Users/23632/.moon/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Users/23632/.cargo/bin:/mnt/c/Users/23632/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/23632/.dotnet/tools:/mnt/d/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64:/mnt/c/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64:/mnt/d/Program Files/Tesseract-OCR:/mnt/c/Users/23632/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/23632/AppData/Local/Programs/Ollama:/mnt/d/Program Files/JetBrains/RustRover 2024.3.7/bin:/mnt/d/3_Flutter/flutter/bin:/mnt/d/Program Files/CodeBuddy CN/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2d50286631.sock'), ('TERM_PROGRAM', 'vscode'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('AMENT_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/install/village_wang:/home/unique/ros2_ws/install/village_interface:/home/unique/ros2_ws/install/my_cpp_pkg:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_c:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/unique/ros2_ws/ros_test/build/low_prior'), ('COPILOT_DEBUG_NONCE', '5d901767bafdd9f73c7d9e0f0be861af'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unique/ros2_ws/install/village_interface/local/lib/python3.10/dist-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface/local/lib/python3.10/dist-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/install/village_wang:/home/unique/ros2_ws/install/village_interface:/home/unique/ros2_ws/install/my_cpp_pkg:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_c:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[18.888741] (low_prior) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/low_prior.dir/src/low_prior.cpp.o\x1b[0m\n'}
+[18.901113] (-) TimerEvent: {}
+[19.002225] (-) TimerEvent: {}
+[19.102859] (-) TimerEvent: {}
+[19.204264] (-) TimerEvent: {}
+[19.305557] (-) TimerEvent: {}
+[19.406932] (-) TimerEvent: {}
+[19.507988] (-) TimerEvent: {}
+[19.609439] (-) TimerEvent: {}
+[19.710812] (-) TimerEvent: {}
+[19.812481] (-) TimerEvent: {}
+[19.913977] (-) TimerEvent: {}
+[20.014698] (-) TimerEvent: {}
+[20.115838] (-) TimerEvent: {}
+[20.217192] (-) TimerEvent: {}
+[20.318285] (-) TimerEvent: {}
+[20.419093] (-) TimerEvent: {}
+[20.519825] (-) TimerEvent: {}
+[20.620944] (-) TimerEvent: {}
+[20.721744] (-) TimerEvent: {}
+[20.822524] (-) TimerEvent: {}
+[20.923115] (-) TimerEvent: {}
+[21.023694] (-) TimerEvent: {}
+[21.124211] (-) TimerEvent: {}
+[21.225068] (-) TimerEvent: {}
+[21.325943] (-) TimerEvent: {}
+[21.426982] (-) TimerEvent: {}
+[21.527850] (-) TimerEvent: {}
+[21.628668] (-) TimerEvent: {}
+[21.729490] (-) TimerEvent: {}
+[21.830416] (-) TimerEvent: {}
+[21.931275] (-) TimerEvent: {}
+[22.032393] (-) TimerEvent: {}
+[22.133273] (-) TimerEvent: {}
+[22.234165] (-) TimerEvent: {}
+[22.335052] (-) TimerEvent: {}
+[22.435874] (-) TimerEvent: {}
+[22.536701] (-) TimerEvent: {}
+[22.637412] (-) TimerEvent: {}
+[22.738269] (-) TimerEvent: {}
+[22.838990] (-) TimerEvent: {}
+[22.939825] (-) TimerEvent: {}
+[23.040687] (-) TimerEvent: {}
+[23.141390] (-) TimerEvent: {}
+[23.242390] (-) TimerEvent: {}
+[23.343341] (-) TimerEvent: {}
+[23.444206] (-) TimerEvent: {}
+[23.545185] (-) TimerEvent: {}
+[23.646294] (-) TimerEvent: {}
+[23.747187] (-) TimerEvent: {}
+[23.847787] (-) TimerEvent: {}
+[23.948524] (-) TimerEvent: {}
+[24.050073] (-) TimerEvent: {}
+[24.151258] (-) TimerEvent: {}
+[24.252245] (-) TimerEvent: {}
+[24.353079] (-) TimerEvent: {}
+[24.454079] (-) TimerEvent: {}
+[24.555090] (-) TimerEvent: {}
+[24.656323] (-) TimerEvent: {}
+[24.757146] (-) TimerEvent: {}
+[24.858438] (-) TimerEvent: {}
+[24.959683] (-) TimerEvent: {}
+[25.060299] (-) TimerEvent: {}
+[25.161350] (-) TimerEvent: {}
+[25.261907] (-) TimerEvent: {}
+[25.362626] (-) TimerEvent: {}
+[25.463491] (-) TimerEvent: {}
+[25.564204] (-) TimerEvent: {}
+[25.664826] (-) TimerEvent: {}
+[25.768676] (-) TimerEvent: {}
+[25.872014] (-) TimerEvent: {}
+[25.975371] (-) TimerEvent: {}
+[26.078825] (-) TimerEvent: {}
+[26.181906] (-) TimerEvent: {}
+[26.285225] (-) TimerEvent: {}
+[26.388905] (-) TimerEvent: {}
+[26.492495] (-) TimerEvent: {}
+[26.593213] (-) TimerEvent: {}
+[26.694178] (-) TimerEvent: {}
+[26.796719] (-) TimerEvent: {}
+[26.898802] (-) TimerEvent: {}
+[27.001892] (-) TimerEvent: {}
+[27.104099] (-) TimerEvent: {}
+[27.207234] (-) TimerEvent: {}
+[27.309944] (-) TimerEvent: {}
+[27.412013] (-) TimerEvent: {}
+[27.514798] (-) TimerEvent: {}
+[27.617550] (-) TimerEvent: {}
+[27.719588] (-) TimerEvent: {}
+[27.822348] (-) TimerEvent: {}
+[27.924559] (-) TimerEvent: {}
+[28.027778] (-) TimerEvent: {}
+[28.129813] (-) TimerEvent: {}
+[28.231981] (-) TimerEvent: {}
+[28.334590] (-) TimerEvent: {}
+[28.436892] (-) TimerEvent: {}
+[28.537438] (-) TimerEvent: {}
+[28.638064] (-) TimerEvent: {}
+[28.738504] (-) TimerEvent: {}
+[28.838967] (-) TimerEvent: {}
+[28.939433] (-) TimerEvent: {}
+[29.039871] (-) TimerEvent: {}
+[29.140599] (-) TimerEvent: {}
+[29.241123] (-) TimerEvent: {}
+[29.341604] (-) TimerEvent: {}
+[29.442133] (-) TimerEvent: {}
+[29.473566] (low_prior) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX shared library liblow_prior.so\x1b[0m\n'}
+[29.542253] (-) TimerEvent: {}
+[29.642748] (-) TimerEvent: {}
+[29.743270] (-) TimerEvent: {}
+[29.843799] (-) TimerEvent: {}
+[29.944248] (-) TimerEvent: {}
+[30.044871] (-) TimerEvent: {}
+[30.137117] (low_prior) StdoutLine: {'line': b'[100%] Built target low_prior\n'}
+[30.145034] (-) TimerEvent: {}
+[30.159160] (low_prior) CommandEnded: {'returncode': 0}
+[30.160594] (low_prior) JobProgress: {'identifier': 'low_prior', 'progress': 'install'}
+[30.175767] (low_prior) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/unique/ros2_ws/ros_test/build/low_prior'], 'cwd': '/home/unique/ros2_ws/ros_test/build/low_prior', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'unique'), ('GIT_ASKPASS', '/home/unique/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_common/lib:/home/unique/ros2_ws/install/village_interface/lib:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/unique'), ('OLDPWD', '/home/unique/ros2_ws/ros_test/src'), ('TERM_PROGRAM_VERSION', '1.123.0'), ('RUSTUP_UPDATE_ROOT', 'https://mirrors.tuna.tsinghua.edu.cn/rustup/rustup'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-20e2ca4d-8c92-4c05-b0ed-a679bde46b4c.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/unique/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/home/unique/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('RUSTUP_DIST_SERVER', 'https://mirrors.tuna.tsinghua.edu.cn/rustup'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('WSL_DISTRO_NAME', 'Ubuntu-22.04'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install:/home/unique/ros2_ws/install:/home/unique/ros2_ws/ros2_21_tutorials/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'unique'), ('NAME', 'TBunique'), ('WSL_INTEROP', '/run/WSL/9335_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/home/unique/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/unique/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/unique/.vscode-server/bin/6a44c352bd24569c417e530095901b649960f9f8/bin/remote-cli:/home/unique/.local/bin:/home/unique/.cargo/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/java8path:/mnt/c/Program Files (x86)/Common Files/Oracle/Java/javapath:/mnt/d/3VMWare/bin/:/mnt/c/Program Files/Microsoft/jdk-11.0.12.7-hotspot/bin:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Strawberry/c/bin:/mnt/c/Strawberry/perl/site/bin:/mnt/c/Strawberry/perl/bin:/mnt/c/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x86/:/mnt/d/msys64/usr/bin:/mnt/d/msys64/mingw64/bin:/mnt/c/Users/23632/AppData/Local/uv/bin:/mnt/c/Program Files/nvm:/mnt/c/Program Files/nodejs:/mnt/c/Program Files/nvm:/mnt/c/Program Files/nodejs:/mnt/d/Program Files/Git/cmd:/mnt/d/Python/Scripts/:/mnt/d/Python/:/mnt/c/Users/23632/.moon/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Users/23632/.cargo/bin:/mnt/c/Users/23632/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/23632/.dotnet/tools:/mnt/d/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/Windows Kits/10/bin/10.0.22621.0/x64:/mnt/c/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64:/mnt/d/Program Files/Tesseract-OCR:/mnt/c/Users/23632/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/23632/AppData/Local/Programs/Ollama:/mnt/d/Program Files/JetBrains/RustRover 2024.3.7/bin:/mnt/d/3_Flutter/flutter/bin:/mnt/d/Program Files/CodeBuddy CN/bin:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'C.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-2d50286631.sock'), ('TERM_PROGRAM', 'vscode'), ('ROSDISTRO_INDEX_URL', 'https://mirrors.tuna.tsinghua.edu.cn/rosdistro/index-v4.yaml'), ('AMENT_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/install/village_wang:/home/unique/ros2_ws/install/village_interface:/home/unique/ros2_ws/install/my_cpp_pkg:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_c:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/unique/ros2_ws/ros_test/build/low_prior'), ('COPILOT_DEBUG_NONCE', '5d901767bafdd9f73c7d9e0f0be861af'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/unique/ros2_ws/install/village_interface/local/lib/python3.10/dist-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface/local/lib/python3.10/dist-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo/lib/python3.10/site-packages:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('CMAKE_PREFIX_PATH', '/home/unique/ros2_ws/ros_test/install/realtime_common:/home/unique/ros2_ws/install/village_wang:/home/unique/ros2_ws/install/village_interface:/home/unique/ros2_ws/install/my_cpp_pkg:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_c:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action_cpp:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_interface:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_urdf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_topic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_tf:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_service:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_qos:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_pkg_python:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_parameter:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_node:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_launch:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_action:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo_harmonic:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_gazebo:/home/unique/ros2_ws/ros2_21_tutorials/install/learning_cv:/opt/ros/humble'), ('WSLENV', 'VSCODE_WSL_EXT_LOCATION/up')]), 'shell': False}
+[30.187006] (low_prior) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[30.187517] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/include\n'}
+[30.187707] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/include/low_prior\n'}
+[30.187766] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/include/low_prior/low_prior.hpp\n'}
+[30.187830] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/lib/liblow_prior.so\n'}
+[30.200205] (low_prior) StdoutLine: {'line': b'-- Set runtime path of "/home/unique/ros2_ws/ros_test/install/low_prior/lib/liblow_prior.so" to ""\n'}
+[30.200848] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/ament_index/resource_index/package_run_dependencies/low_prior\n'}
+[30.201256] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/ament_index/resource_index/parent_prefix_path/low_prior\n'}
+[30.202069] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/environment/ament_prefix_path.sh\n'}
+[30.202345] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/environment/ament_prefix_path.dsv\n'}
+[30.202633] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/environment/path.sh\n'}
+[30.203007] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/environment/path.dsv\n'}
+[30.203234] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/local_setup.bash\n'}
+[30.203495] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/local_setup.sh\n'}
+[30.203818] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/local_setup.zsh\n'}
+[30.204116] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/local_setup.dsv\n'}
+[30.204410] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/package.dsv\n'}
+[30.204921] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/ament_index/resource_index/packages/low_prior\n'}
+[30.205358] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/ament_index/resource_index/rclcpp_components/low_prior\n'}
+[30.205866] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/cmake/low_priorConfig.cmake\n'}
+[30.206133] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/cmake/low_priorConfig-version.cmake\n'}
+[30.206420] (low_prior) StdoutLine: {'line': b'-- Installing: /home/unique/ros2_ws/ros_test/install/low_prior/share/low_prior/package.xml\n'}
+[30.210165] (low_prior) CommandEnded: {'returncode': 0}
+[30.234090] (low_prior) JobEnded: {'identifier': 'low_prior', 'rc': 0}
+[30.235807] (-) EventReactorShutdown: {}

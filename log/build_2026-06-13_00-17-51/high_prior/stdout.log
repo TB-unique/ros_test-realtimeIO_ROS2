@@ -1,0 +1,26 @@
+[35m[1mConsolidate compiler generated dependencies of target high_prior[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/high_prior.dir/src/high_prior.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libhigh_prior.so[0m
+[100%] Built target high_prior
+-- Install configuration: ""
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/high_prior/include
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/high_prior/include/high_prior
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/high_prior/include/high_prior/high_prior.hpp
+-- Installing: /home/unique/ros2_ws/ros_test/install/high_prior/lib/libhigh_prior.so
+-- Set runtime path of "/home/unique/ros2_ws/ros_test/install/high_prior/lib/libhigh_prior.so" to ""
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/high_prior/share/ament_index/resource_index/package_run_dependencies/high_prior
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/high_prior/share/ament_index/resource_index/parent_prefix_path/high_prior
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/high_prior/share/high_prior/environment/ament_prefix_path.sh
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/high_prior/share/high_prior/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/high_prior/share/high_prior/environment/path.sh
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/high_prior/share/high_prior/environment/path.dsv
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/high_prior/share/high_prior/local_setup.bash
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/high_prior/share/high_prior/local_setup.sh
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/high_prior/share/high_prior/local_setup.zsh
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/high_prior/share/high_prior/local_setup.dsv
+-- Installing: /home/unique/ros2_ws/ros_test/install/high_prior/share/high_prior/package.dsv
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/high_prior/share/ament_index/resource_index/packages/high_prior
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/high_prior/share/ament_index/resource_index/rclcpp_components/high_prior
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/high_prior/share/high_prior/cmake/high_priorConfig.cmake
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/high_prior/share/high_prior/cmake/high_priorConfig-version.cmake
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/high_prior/share/high_prior/package.xml
