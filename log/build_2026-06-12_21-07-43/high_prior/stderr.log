@@ -1,8 +1,0 @@
-CMake Error at /home/unique/ros2_ws/ros_test/install/realtime_common/share/realtime_common/cmake/ament_cmake_export_libraries-extras.cmake:48 (message):
-  Package 'realtime_common' exports the library 'realtime_common' which
-  couldn't be found
-Call Stack (most recent call first):
-  /home/unique/ros2_ws/ros_test/install/realtime_common/share/realtime_common/cmake/realtime_commonConfig.cmake:41 (include)
-  CMakeLists.txt:14 (find_package)
-
-

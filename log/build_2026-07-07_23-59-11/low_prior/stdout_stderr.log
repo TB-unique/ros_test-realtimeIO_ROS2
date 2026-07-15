@@ -1,4 +1,0 @@
-[35m[1mConsolidate compiler generated dependencies of target low_prior[0m
-[ 50%] [32mBuilding CXX object CMakeFiles/low_prior.dir/src/low_prior.cpp.o[0m
-[100%] [32m[1mLinking CXX shared library liblow_prior.so[0m
-[100%] Built target low_prior

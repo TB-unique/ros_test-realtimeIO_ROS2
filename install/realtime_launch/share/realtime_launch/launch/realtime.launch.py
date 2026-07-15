@@ -27,7 +27,7 @@ def generate_launch_description():
                     "write_io_priority": 90,
                     "read_cpu_core": 2,
                     "write_cpu_core": 2,
-                    "read_pub_cpu_core": 3,
+                    # "read_pub_cpu_core": 3,
                     "io_period_ms_read": 0.02,
                     "io_period_ms_write": 0.02,
                     "read_file": "/tmp/loopback_input.bin",

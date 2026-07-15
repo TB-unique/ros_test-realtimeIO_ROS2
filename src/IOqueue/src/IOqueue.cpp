@@ -28,7 +28,7 @@ IOqueue::IOqueue(const rclcpp::NodeOptions & options)
   get_parameter("write_io_priority", write_io_priority_);
   get_parameter("read_cpu_core", read_cpu_core_);
   get_parameter("write_cpu_core", write_cpu_core_);
-  get_parameter("read_pub_cpu_core", read_pub_cpu_core_);
+  // get_parameter("read_pub_cpu_core", read_pub_cpu_core_);
   get_parameter("io_period_ms_read", io_period_ms_read);
   get_parameter("io_period_ms_write", io_period_ms_write);
   io_read_file_path_ = get_parameter("read_file").as_string();
@@ -73,7 +73,7 @@ IOqueue::IOqueue(const rclcpp::NodeOptions & options)
   });
   
   read_queue_to_rosTopic_thread_ = std::thread([this]() {
-    realtime_common::set_cpu_affinity(read_pub_cpu_core_);
+    realtime_common::set_cpu_affinity(read_cpu_core_);
     realtime_common::set_realtime_priority(read_io_priority_);
     read_queue_to_rosTopic();
   });
@@ -87,7 +87,7 @@ IOqueue::IOqueue(const rclcpp::NodeOptions & options)
   
   RCLCPP_INFO(get_logger(), "IOqueue Component started");
   RCLCPP_INFO(get_logger(), "Read IO: CPU%d P%d, Pub CPU%d, Period %.3fms",
-              read_cpu_core_, read_io_priority_, read_pub_cpu_core_, io_period_ms_read);
+              read_cpu_core_, read_io_priority_, read_cpu_core_, io_period_ms_read);
   RCLCPP_INFO(get_logger(), "Write IO: CPU%d P%d, Period %.3fms",
               write_cpu_core_, write_io_priority_, io_period_ms_write);
   RCLCPP_INFO(get_logger(), "Read file: %s", io_read_file_path_.c_str());
@@ -159,13 +159,23 @@ IOqueue::~IOqueue()
 void IOqueue::rosTopic_to_write_queue(
   const main_interface::msg::ByteRow::SharedPtr msg)
 {
-  QueueSlot slot;
-  slot.size = std::min(msg->data.size(), MAX_MSG_SIZE);
-  std::memcpy(slot.data.data(), msg->data.data(), slot.size);
+  // LoopbackNode 聚合后可能产生超大消息，按 MAX_MSG_SIZE 分片推入 write_queue
+  const uint8_t * src = msg->data.data();
+  std::size_t remaining = msg->data.size();
 
-  if (!write_queue_.try_push(slot)) {
-    RCLCPP_WARN_THROTTLE(get_logger(), *get_clock(), 1000,
-                         "Write queue full, dropping data");
+  while (remaining > 0) {
+    QueueSlot slot;
+    slot.size = std::min(remaining, MAX_MSG_SIZE);
+    std::memcpy(slot.data.data(), src, slot.size);
+
+    if (!write_queue_.try_push(slot)) {
+      RCLCPP_WARN_THROTTLE(get_logger(), *get_clock(), 1000,
+                           "Write queue full, dropping data");
+      return;  // 队列满，丢弃剩余分片
+    }
+
+    src += slot.size;
+    remaining -= slot.size;
   }
 }
 
@@ -199,8 +209,8 @@ void IOqueue::read_io_thread()
       read_count_++;
     } else {
       // 文件已读完，退出读 IO 线程
-      RCLCPP_INFO(get_logger(), "Read file complete, exiting read_io_thread");
-      break;
+      RCLCPP_INFO_ONCE(get_logger(), "Read file complete, exiting read_io_thread");
+     // break;
     }
     
     // // 3. 检查抖动
@@ -301,11 +311,10 @@ bool IOqueue::read_hardware(main_interface::msg::ByteRow & data)
     return false;
   }
 
-  // 每次随机读取 1~4096 字节，模拟真实硬件 IO 数据量不均的特性
+  // 每次随机读取 500~64KB，模拟真实硬件 IO 数据量不均的特性
   thread_local std::mt19937 rng(std::random_device{}());
   std::uniform_int_distribution<std::size_t> dist(500, 1024*1024);
   const std::size_t read_size = dist(rng);
-  // const std::size_t read_size = 1024*1024;
   data.data.resize(read_size);
 
   io_read_file_.read(reinterpret_cast<char *>(data.data.data()), read_size);

@@ -9,18 +9,17 @@
 #include <fstream>
 #include <string>
 
-// 单条消息最大字节数（实际 IO 每次读 1~4096，环路回传聚合后最大一般不超过几 MB，
-// 但队列槽位不宜过大否则内存爆炸。write_queue 接收的是 LoopbackNode 聚合后的整包数据，
-// 需要能容纳一次批处理的所有行，按 200MB 文件 / 255 批 ≈ 820KB 估算，设 512KB 足够）
-constexpr std::size_t MAX_MSG_SIZE = 1024 * 1024;  // 1MB
+// 单条消息最大字节数（读 IO 每次 1~4096 字节，不需要很大槽位）
+// write_queue 接收 LoopbackNode 聚合后的数据，通过分片保证不超限
+constexpr std::size_t MAX_MSG_SIZE = 1024 * 1024;  // 64KB
 
 // 队列容量（必须是2的幂）
-// 200MB 文件按平均 2KB 每次读取约 100K 条，消费者 2ms 周期处理，需要足够缓冲
-constexpr std::size_t READ_QUEUE_SIZE = 512;
-constexpr std::size_t WRITE_QUEUE_SIZE = 512;
+constexpr std::size_t READ_QUEUE_SIZE = 1024;
+constexpr std::size_t WRITE_QUEUE_SIZE = 1024;
 
 // 用于 ringbuffer 的固定大小存储单元（trivially copyable）
-struct alignas(64) QueueSlot
+// 注意：不要加 alignas，ringbuffer 的 Slot 已处理对齐
+struct QueueSlot
 {
   std::array<uint8_t, MAX_MSG_SIZE> data{};
   std::size_t size{0};
@@ -77,7 +76,7 @@ private:
   int write_io_priority_{90};
   int read_cpu_core_{2};
   int write_cpu_core_{2};
-  int read_pub_cpu_core_{3};      // 消费者发布线程独立核心
+  // int read_pub_cpu_core_{3};      // 消费者发布线程独立核心
   double io_period_ms_read{0.02};  // 20μs IO读周期
   double io_period_ms_write{0.02}; // 20μs IO写周期
   

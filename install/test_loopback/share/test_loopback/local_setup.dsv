@@ -1,1 +1,2 @@
-/home/unique/ros2_ws/ros_test/build/test_loopback/ament_cmake_environment_hooks/local_setup.dsv
+source;share/test_loopback/environment/ament_prefix_path.sh
+source;share/test_loopback/environment/path.sh

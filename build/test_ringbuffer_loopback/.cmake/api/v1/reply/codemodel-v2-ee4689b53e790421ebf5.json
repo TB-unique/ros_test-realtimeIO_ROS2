@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-89589aebff788b87befc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "test_ringbuffer_loopback",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "test_ringbuffer_loopback::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_ringbuffer_loopback-24ffab2814957e359d1f.json",
+					"name" : "test_ringbuffer_loopback",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_ringbuffer_loopback_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_ringbuffer_loopback_node-a2d87d1eb27d5717b681.json",
+					"name" : "test_ringbuffer_loopback_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "test_ringbuffer_loopback_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-test_ringbuffer_loopback_uninstall-e06271754e79a81e8e58.json",
+					"name" : "test_ringbuffer_loopback_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-d0126466372ef3f77535.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/unique/ros2_ws/ros_test/build/test_ringbuffer_loopback",
+		"source" : "/home/unique/ros2_ws/ros_test/src/test_ringbuffer_loopback"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

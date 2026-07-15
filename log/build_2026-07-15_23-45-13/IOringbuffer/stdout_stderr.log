@@ -1,0 +1,27 @@
+[ 50%] Built target IOringbuffer_node
+[ 75%] [32mBuilding CXX object CMakeFiles/IOringbuffer.dir/src/IOringbuffer.cpp.o[0m
+[100%] [32m[1mLinking CXX shared library libIOringbuffer.so[0m
+[100%] Built target IOringbuffer
+-- Install configuration: ""
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/IOringbuffer/include
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/IOringbuffer/include/IOringbuffer
+-- Installing: /home/unique/ros2_ws/ros_test/install/IOringbuffer/include/IOringbuffer/IOringbuffer.hpp
+-- Installing: /home/unique/ros2_ws/ros_test/install/IOringbuffer/lib/libIOringbuffer.so
+-- Set runtime path of "/home/unique/ros2_ws/ros_test/install/IOringbuffer/lib/libIOringbuffer.so" to ""
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/IOringbuffer/lib/IOringbuffer/IOringbuffer_node
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/IOringbuffer/share/ament_index/resource_index/package_run_dependencies/IOringbuffer
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/IOringbuffer/share/ament_index/resource_index/parent_prefix_path/IOringbuffer
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/environment/ament_prefix_path.sh
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/environment/path.sh
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/environment/path.dsv
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/local_setup.bash
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/local_setup.sh
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/local_setup.zsh
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/local_setup.dsv
+-- Installing: /home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/package.dsv
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/IOringbuffer/share/ament_index/resource_index/packages/IOringbuffer
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/IOringbuffer/share/ament_index/resource_index/rclcpp_components/IOringbuffer
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/cmake/IOringbufferConfig.cmake
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/cmake/IOringbufferConfig-version.cmake
+-- Up-to-date: /home/unique/ros2_ws/ros_test/install/IOringbuffer/share/IOringbuffer/package.xml

@@ -1,2 +1,0 @@
-Invoking command in '/home/unique/ros2_ws/ros_test/build/main_interface': /usr/bin/cmake /home/unique/ros2_ws/ros_test/src/main_interface -DCMAKE_INSTALL_PREFIX=/home/unique/ros2_ws/ros_test/install/main_interface
-Invoked command in '/home/unique/ros2_ws/ros_test/build/main_interface' returned '1': /usr/bin/cmake /home/unique/ros2_ws/ros_test/src/main_interface -DCMAKE_INSTALL_PREFIX=/home/unique/ros2_ws/ros_test/install/main_interface

@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/unique/ros2_ws/ros_test/build/test_loopback/libtest_loopback.so" "TARGETS" "test_loopback" "ARCHIVE_DESTINATION" "lib" "LIBRARY_DESTINATION" "lib" "RUNTIME_DESTINATION" "bin")
