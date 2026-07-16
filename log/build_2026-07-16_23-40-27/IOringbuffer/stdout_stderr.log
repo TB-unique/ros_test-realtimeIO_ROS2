@@ -1,0 +1,11 @@
+[35m[1mConsolidate compiler generated dependencies of target IOringbuffer[0m
+[ 50%] Built target IOringbuffer_node
+[ 75%] [32mBuilding CXX object CMakeFiles/IOringbuffer.dir/src/IOringbuffer.cpp.o[0m
+[01m[K/home/unique/ros2_ws/ros_test/src/IOringbuffer/src/IOringbuffer.cpp:[m[K In lambda function:
+[01m[K/home/unique/ros2_ws/ros_test/src/IOringbuffer/src/IOringbuffer.cpp:76:39:[m[K [01;31m[Kerror: [m[K‘[01m[Kread_pub_cpu_core_[m[K’ was not declared in this scope; did you mean ‘[01m[Kread_cpu_core_[m[K’?
+   76 |     realtime_common::set_cpu_affinity([01;31m[Kread_pub_cpu_core_[m[K);
+      |                                       [01;31m[K^~~~~~~~~~~~~~~~~~[m[K
+      |                                       [32m[Kread_cpu_core_[m[K
+gmake[2]: *** [CMakeFiles/IOringbuffer.dir/build.make:76: CMakeFiles/IOringbuffer.dir/src/IOringbuffer.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/IOringbuffer.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

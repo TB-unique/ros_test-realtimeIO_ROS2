@@ -51,8 +51,8 @@ private:
     rclcpp::Publisher<main_interface::msg::ByteRow>::SharedPtr read_pub_;
 
     // === 无锁环形缓冲区 ===
-    static constexpr std::size_t READ_RINGBUFFER_CAP = 256;   // 2的幂
-    static constexpr std::size_t WRITE_RINGBUFFER_CAP = 128;  // 2的幂
+    static constexpr std::size_t READ_RINGBUFFER_CAP = 1024;   // 2的幂
+    static constexpr std::size_t WRITE_RINGBUFFER_CAP = 1024;  // 2的幂
     realtime_common::SPSCRingBuffer<RingBufferSlot, READ_RINGBUFFER_CAP> read_ringbuffer_;    // IO → ROS
     realtime_common::SPSCRingBuffer<RingBufferSlot, WRITE_RINGBUFFER_CAP> write_ringbuffer_;  // ROS → IO
 
@@ -68,7 +68,7 @@ private:
     int write_io_priority_{90};
     int read_cpu_core_{2};
     int write_cpu_core_{2};
-    int read_pub_cpu_core_{3};      // 消费者发布线程独立核心
+//   int read_pub_cpu_core_{3};      // 消费者发布线程独立核心
     double io_period_ms_read_{0.02};
     double io_period_ms_write_{0.02};
 

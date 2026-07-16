@@ -17,7 +17,7 @@ IOringbuffer::IOringbuffer(const rclcpp::NodeOptions & options)
   declare_parameter("write_io_priority", 90);
   declare_parameter("read_cpu_core", 2);
   declare_parameter("write_cpu_core", 2);
-  declare_parameter("read_pub_cpu_core", 3);
+  // declare_parameter("read_pub_cpu_core", 3);
   declare_parameter("io_period_ms_read", 0.02);
   declare_parameter("io_period_ms_write", 0.02);
   declare_parameter("read_file", "/tmp/ringbuffer_input.bin");
@@ -27,7 +27,7 @@ IOringbuffer::IOringbuffer(const rclcpp::NodeOptions & options)
   get_parameter("write_io_priority", write_io_priority_);
   get_parameter("read_cpu_core", read_cpu_core_);
   get_parameter("write_cpu_core", write_cpu_core_);
-  get_parameter("read_pub_cpu_core", read_pub_cpu_core_);
+  // get_parameter("read_pub_cpu_core", read_pub_cpu_core_);
   get_parameter("io_period_ms_read", io_period_ms_read_);
   get_parameter("io_period_ms_write", io_period_ms_write_);
   io_read_file_path_ = get_parameter("read_file").as_string();
@@ -73,8 +73,8 @@ IOringbuffer::IOringbuffer(const rclcpp::NodeOptions & options)
 
   // 消费者发布线程（独立核心）
   read_ringbuffer_to_rosTopic_thread_ = std::thread([this]() {
-    realtime_common::set_cpu_affinity(read_pub_cpu_core_);
-    realtime_common::set_realtime_priority(read_io_priority_ - 2);
+    realtime_common::set_cpu_affinity(read_cpu_core_);
+    realtime_common::set_realtime_priority(read_io_priority_);
     read_ringbuffer_to_rosTopic();
   });
 
@@ -87,7 +87,7 @@ IOringbuffer::IOringbuffer(const rclcpp::NodeOptions & options)
 
   RCLCPP_INFO(get_logger(), "IOringbuffer Component started");
   RCLCPP_INFO(get_logger(), "Read IO: CPU%d P%d, Pub CPU%d, Period %.3fms",
-              read_cpu_core_, read_io_priority_, read_pub_cpu_core_, io_period_ms_read_);
+              read_cpu_core_, read_io_priority_, read_cpu_core_, io_period_ms_read_);
   RCLCPP_INFO(get_logger(), "Write IO: CPU%d P%d, Period %.3fms",
               write_cpu_core_, write_io_priority_, io_period_ms_write_);
   RCLCPP_INFO(get_logger(), "Read file: %s", io_read_file_path_.c_str());
@@ -159,13 +159,23 @@ IOringbuffer::~IOringbuffer()
 void IOringbuffer::rosTopic_to_write_ringbuffer(
     const main_interface::msg::ByteRow::SharedPtr msg)
 {
-  RingBufferSlot slot;
-  slot.size = std::min(msg->data.size(), MAX_MSG_SIZE);
-  std::memcpy(slot.data.data(), msg->data.data(), slot.size);
 
-  if (!write_ringbuffer_.try_push(slot)) {
-    RCLCPP_WARN_THROTTLE(get_logger(), *get_clock(), 1000,
-                         "Write ringbuffer is full, discard message");
+   const uint8_t * src = msg->data.data();
+  std::size_t remaining = msg->data.size();
+
+  while (remaining > 0) {
+    RingBufferSlot slot;
+    slot.size = std::min(remaining, MAX_MSG_SIZE);
+    std::memcpy(slot.data.data(), src, slot.size);
+
+    if (!write_ringbuffer_.try_push(slot)) {
+      RCLCPP_WARN_THROTTLE(get_logger(), *get_clock(), 1000,
+                           "Write ringbuffer is full, discard message");
+      break; // 如果环形缓冲区满了，丢弃剩余数据
+    }
+
+    src += slot.size;
+    remaining -= slot.size;
   }
 }
 
@@ -194,8 +204,8 @@ void IOringbuffer::read_io_thread()
       read_count_++;
     } else {
       // 文件已读完，退出读 IO 线程
-      RCLCPP_INFO(get_logger(), "Read file complete, exiting read_io_thread");
-      break;
+      RCLCPP_INFO_ONCE(get_logger(), "Read file complete, exiting read_io_thread");
+      //break;
     }
 
     // 3. 精确周期等待
