@@ -38,7 +38,7 @@ public:
   {
     // 预分配所有元素（避免运行时 new/delete）
     for (std::size_t i = 0; i < Capacity; ++i) {
-      buffer_[i].storage.T::~T();  // 确保处于未初始化状态
+      buffer_[i].storage.data.~T();  // 确保处于未初始化状态
     }
   }
 
@@ -49,7 +49,7 @@ public:
     std::size_t write = write_idx_.load(std::memory_order_relaxed);
     
     while (read != write) {
-      buffer_[read & (Capacity - 1)].storage.T::~T();
+      buffer_[read & (Capacity - 1)].storage.data.~T();
       ++read;
     }
   }
@@ -75,7 +75,7 @@ public:
     }
     
     // 构造元素（原地构造，无拷贝）
-    new (&buffer_[write & (Capacity - 1)].storage) T(std::forward<Args>(args)...);
+    new (&buffer_[write & (Capacity - 1)].storage.data) T(std::forward<Args>(args)...);
     
     // 关键：发布写入
     // release 确保构造完成后再更新 write_idx_
@@ -114,10 +114,10 @@ public:
     }
     
     // 拷贝数据
-    out = std::move(buffer_[read & (Capacity - 1)].storage.T);
+    out = std::move(buffer_[read & (Capacity - 1)].storage.data);
     
     // 析构元素
-    buffer_[read & (Capacity - 1)].storage.T::~T();
+    buffer_[read & (Capacity - 1)].storage.data.~T();
     
     // 关键：发布读取
     // release 确保析构完成后再更新 read_idx_
@@ -137,7 +137,7 @@ public:
       return nullptr;
     }
     
-    return &buffer_[read & (Capacity - 1)].storage.T;
+    return &buffer_[read & (Capacity - 1)].storage.data;
   }
 
   /**
@@ -146,7 +146,7 @@ public:
   void pop_finish() noexcept
   {
     const std::size_t read = read_idx_.load(std::memory_order_relaxed);
-    buffer_[read & (Capacity - 1)].storage.T::~T();
+    buffer_[read & (Capacity - 1)].storage.data.~T();
     read_idx_.store(read + 1, std::memory_order_release);
   }
 
@@ -167,8 +167,8 @@ public:
     const std::size_t count = std::min(available, max_count);
     
     for (std::size_t i = 0; i < count; ++i) {
-      *out++ = std::move(buffer_[(read + i) & (Capacity - 1)].storage.T);
-      buffer_[(read + i) & (Capacity - 1)].storage.T::~T();
+      *out++ = std::move(buffer_[(read + i) & (Capacity - 1)].storage.data);
+      buffer_[(read + i) & (Capacity - 1)].storage.data.~T();
     }
     
     read_idx_.store(read + count, std::memory_order_release);

@@ -168,7 +168,7 @@ void IOqueue::rosTopic_to_write_queue(
     slot.size = std::min(remaining, MAX_MSG_SIZE);
     std::memcpy(slot.data.data(), src, slot.size);
 
-    if (!write_queue_.try_push(slot)) {
+    if (!write_queue_.push(slot)) {
       RCLCPP_WARN_THROTTLE(get_logger(), *get_clock(), 1000,
                            "Write queue full, dropping data");
       return;  // 队列满，丢弃剩余分片
@@ -201,7 +201,7 @@ void IOqueue::read_io_thread()
       slot.size = std::min(read_data.data.size(), MAX_MSG_SIZE);
       std::memcpy(slot.data.data(), read_data.data.data(), slot.size);
 
-      if (!read_queue_.try_push(slot)) {
+      if (!read_queue_.push(slot)) {
         RCLCPP_WARN_THROTTLE(get_logger(), *get_clock(), 1000,
                              "Read queue full, dropping data");
       }
@@ -224,6 +224,7 @@ void IOqueue::read_io_thread()
     //        !max_read_jitter_us_.compare_exchange_weak(old_max, jitter));
     
     // 4. 精确周期等待
+    next_cycle = clock::now();
     next_cycle += period;
     std::this_thread::sleep_until(next_cycle);
   }
@@ -240,7 +241,7 @@ void IOqueue::read_queue_to_rosTopic()
     QueueSlot slot;
 
     // 批量出队，QueueSlot → ByteRow
-    while (read_queue_.try_pop(slot)) {
+    while (read_queue_.pop(slot)) {
       main_interface::msg::ByteRow row;
       row.data.assign(slot.data.begin(), slot.data.begin() + slot.size);
       ros_msg.rows.push_back(std::move(row));
@@ -250,6 +251,7 @@ void IOqueue::read_queue_to_rosTopic()
       read_pub_->publish(ros_msg);
     }
 
+    next_cycle = clock::now();
     next_cycle += period;
     std::this_thread::sleep_until(next_cycle);
   }
@@ -269,7 +271,7 @@ void IOqueue::write_io_thread()
     
     // 1. 从队列取命令（非阻塞）
     QueueSlot slot;
-    if (write_queue_.try_pop(slot)) {
+    if (write_queue_.pop(slot)) {
       // QueueSlot → ByteRow
       cmd_data.data.assign(slot.data.begin(), slot.data.begin() + slot.size);
 
@@ -293,6 +295,7 @@ void IOqueue::write_io_thread()
     //        !max_write_jitter_us_.compare_exchange_weak(old_max, jitter));
     
     // 4. 精确周期等待
+    next_cycle = clock::now();
     next_cycle += period;
     std::this_thread::sleep_until(next_cycle);
   }

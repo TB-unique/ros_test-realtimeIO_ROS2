@@ -209,6 +209,7 @@ void IOringbuffer::read_io_thread()
     }
 
     // 3. 精确周期等待
+    next_cycle = clock::now();
     next_cycle += period;
     std::this_thread::sleep_until(next_cycle);
   }
@@ -235,6 +236,7 @@ void IOringbuffer::read_ringbuffer_to_rosTopic()
       read_pub_->publish(std::move(ros_msg));
     }
 
+    next_cycle = clock::now();
     next_cycle += period;
     std::this_thread::sleep_until(next_cycle);
   }
@@ -262,6 +264,7 @@ void IOringbuffer::write_io_thread()
       write_count_++;
     }
 
+    next_cycle = clock::now();
     next_cycle += period;
     std::this_thread::sleep_until(next_cycle);
   }

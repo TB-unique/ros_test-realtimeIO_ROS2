@@ -4,18 +4,20 @@
 #include <rclcpp/rclcpp.hpp>
 #include "main_interface/msg/byte_rows.hpp"
 #include "main_interface/msg/byte_row.hpp"
-#include "realtime_common/SPSC_ringbuffer.hpp"
+//#include "realtime_common/SPSC_ringbuffer.hpp"
+#include "realtime_common/SPSC_queue.hpp"
 
 #include <fstream>
 #include <string>
 
-// 单条消息最大字节数（读 IO 每次 1~4096 字节，不需要很大槽位）
-// write_queue 接收 LoopbackNode 聚合后的数据，通过分片保证不超限
+// 单条消息最大字节数（64KB，匹配一次典型 IO 读取量）
+// LoopbackNode 聚合后的超大消息通过 rosTopic_to_write_queue 分片处理
 constexpr std::size_t MAX_MSG_SIZE = 1024 * 1024;  // 64KB
 
 // 队列容量（必须是2的幂）
-constexpr std::size_t READ_QUEUE_SIZE = 1024;
-constexpr std::size_t WRITE_QUEUE_SIZE = 1024;
+// 256 × 64KB ≈ 16MB 每队列，总计 32MB
+constexpr std::size_t READ_QUEUE_SIZE = 128;
+constexpr std::size_t WRITE_QUEUE_SIZE = 128;
 
 // 用于 ringbuffer 的固定大小存储单元（trivially copyable）
 // 注意：不要加 alignas，ringbuffer 的 Slot 已处理对齐
@@ -61,8 +63,8 @@ private:
   rclcpp::Publisher<main_interface::msg::ByteRows>::SharedPtr read_pub_;
   
   // === 无锁环形缓冲区 ===
-  realtime_common::SPSCRingBuffer<QueueSlot, READ_QUEUE_SIZE> read_queue_;    // IO → ROS
-  realtime_common::SPSCRingBuffer<QueueSlot, WRITE_QUEUE_SIZE> write_queue_;  // ROS → IO
+  realtime_common::SPSCQueue<QueueSlot, READ_QUEUE_SIZE> read_queue_;    // IO → ROS
+  realtime_common::SPSCQueue<QueueSlot, WRITE_QUEUE_SIZE> write_queue_;  // ROS → IO
   
   // === 文件IO模拟硬件 ===
   std::string io_read_file_path_;   // read_hardware 读取的输入文件

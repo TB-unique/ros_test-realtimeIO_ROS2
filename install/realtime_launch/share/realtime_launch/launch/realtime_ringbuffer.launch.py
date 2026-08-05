@@ -10,7 +10,9 @@ def generate_launch_description():
         name="realtime_container",
         namespace="",
         package="rclcpp_components",
-        executable="component_container_mt",
+        # executable="component_container_mt",  # 多线程 executor
+        executable="component_container",
+        arguments=["--isolated"],
  #       prefix="taskset -c 2,3",
         composable_node_descriptions=[
             ComposableNode(
