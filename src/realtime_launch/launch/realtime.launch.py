@@ -11,9 +11,11 @@ def generate_launch_description():
         namespace="",
         package="rclcpp_components",
         # executable="component_container_mt",  # 多线程 executor
-        executable="component_container",
-        arguments=["--isolated"],
+        executable="component_container_isolated", # 隔离 executor
+      #  arguments=["--isolated"],
 #        prefix="taskset -c 2,3",
+        output="screen",
+        emulate_tty=True,
         composable_node_descriptions=[
             ComposableNode(
                 package="test_loopback",
@@ -38,7 +40,7 @@ def generate_launch_description():
                 extra_arguments=[{"use_intra_process_comms": True}],
             ),
         ],
-        output="screen",
+     
     )
 
     return LaunchDescription([container])

@@ -36,6 +36,11 @@ inline bool set_realtime_priority(int priority = 80)
 
 inline bool set_cpu_affinity(int cpu_core)
 {
+  if (cpu_core < 1 || cpu_core > 15) {
+    std::cerr << "CPU core must be 1-15" << std::endl;
+    return false;
+  }
+
   cpu_set_t cpuset;
   CPU_ZERO(&cpuset);
   CPU_SET(cpu_core, &cpuset);
