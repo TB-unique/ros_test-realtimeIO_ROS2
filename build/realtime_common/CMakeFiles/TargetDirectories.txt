@@ -1,9 +1,0 @@
-/home/unique/ros2_ws/ros_test/build/realtime_common/CMakeFiles/uninstall.dir
-/home/unique/ros2_ws/ros_test/build/realtime_common/CMakeFiles/realtime_common_uninstall.dir
-/home/unique/ros2_ws/ros_test/build/realtime_common/CMakeFiles/test.dir
-/home/unique/ros2_ws/ros_test/build/realtime_common/CMakeFiles/edit_cache.dir
-/home/unique/ros2_ws/ros_test/build/realtime_common/CMakeFiles/rebuild_cache.dir
-/home/unique/ros2_ws/ros_test/build/realtime_common/CMakeFiles/list_install_components.dir
-/home/unique/ros2_ws/ros_test/build/realtime_common/CMakeFiles/install.dir
-/home/unique/ros2_ws/ros_test/build/realtime_common/CMakeFiles/install/local.dir
-/home/unique/ros2_ws/ros_test/build/realtime_common/CMakeFiles/install/strip.dir

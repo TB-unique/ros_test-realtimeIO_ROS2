@@ -1,7 +1,0 @@
-{
-  "package_name": "main_interface",
-  "non_idl_tuples": [
-    "/home/unique/ros2_ws/ros_test/src/main_interface:msg/ByteRow.msg",
-    "/home/unique/ros2_ws/ros_test/src/main_interface:msg/ByteRows.msg"
-  ]
-}
