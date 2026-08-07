@@ -63,8 +63,8 @@ private:
   rclcpp::Publisher<main_interface::msg::ByteRows>::SharedPtr read_pub_;
   
   // === 无锁环形缓冲区 ===
-  realtime_common::SPSCQueue<QueueSlot, READ_QUEUE_SIZE> read_queue_;    // IO → ROS
-  realtime_common::SPSCQueue<QueueSlot, WRITE_QUEUE_SIZE> write_queue_;  // ROS → IO
+  realtime_common::BlockingSPSCQueue<QueueSlot, READ_QUEUE_SIZE> read_queue_;    // IO → ROS
+  realtime_common::BlockingSPSCQueue<QueueSlot, WRITE_QUEUE_SIZE> write_queue_;  // ROS → IO
   
   // === 文件IO模拟硬件 ===
   std::string io_read_file_path_;   // read_hardware 读取的输入文件

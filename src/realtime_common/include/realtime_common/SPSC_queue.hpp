@@ -416,4 +416,131 @@ private:
   uint64_t spin_cycles_;  // 忙等循环次数
 };
 
+/**
+ * @brief 阻塞式 SPSC 队列（继承 SPSCQueue）
+ *
+ * ✅ Producer：完全复用 SPSCQueue，零锁、零阻塞
+ * ✅ Consumer：新增阻塞等待能力
+ *
+ * 典型用途：
+ *   - RT 线程 → ROS / UI / Log 线程
+ */
+template<typename T, std::size_t Capacity>
+class BlockingSPSCQueue final
+  : private SPSCQueue<T, Capacity>
+{
+public:
+  using Base = SPSCQueue<T, Capacity>;
+
+  BlockingSPSCQueue() noexcept = default;
+
+  ~BlockingSPSCQueue() noexcept
+  {
+    stop();
+  }
+
+  // ==================== Producer API（无锁 + 条件通知）====================
+
+  /**
+   * @brief 入队（非阻塞），成功后通知阻塞的消费者
+   * @return true 成功，false 队列满（主动丢数）
+   *
+   * ✅ 可在硬实时线程中调用（notify_one 无需持锁）
+   */
+  bool push(const T& value) noexcept
+  {
+    bool ok = Base::push(value);
+    if (ok) {
+      cv_.notify_one();
+    }
+    return ok;
+  }
+
+  template<typename... Args>
+  bool emplace(Args&&... args) noexcept
+  {
+    bool ok = Base::emplace(std::forward<Args>(args)...);
+    if (ok) {
+      cv_.notify_one();
+    }
+    return ok;
+  }
+
+  // ==================== Consumer API（阻塞）====================
+
+  /**
+   * @brief 出队（阻塞）
+   * @return true 成功取出数据, false 队列已停止
+   *
+   * ❌ 禁止在 RT 线程中调用
+   */
+  bool pop(T& out)
+  {
+    std::unique_lock<std::mutex> lock(mutex_);
+
+    cv_.wait(lock, [this]() {
+      return stopped_.load(std::memory_order_relaxed) ||
+             !Base::empty();
+    });
+
+    if (stopped_) {
+      return false;
+    }
+
+    Base::pop(out);
+    return true;
+  }
+
+  /**
+   * @brief 非阻塞出队（委托基类 SPSCQueue::pop）
+   */
+  bool try_pop(T& out) noexcept
+  {
+    return Base::pop(out);
+  }
+
+  /**
+   * @brief 批量消费（强烈推荐）
+   */
+  template<typename OutputIterator>
+  std::size_t pop_batch(OutputIterator out, std::size_t max_count)
+  {
+    std::unique_lock<std::mutex> lock(mutex_);
+
+    cv_.wait(lock, [this]() {
+      return stopped_.load(std::memory_order_relaxed) ||
+             !Base::empty();
+    });
+
+    if (stopped_) {
+      return 0;
+    }
+
+    return Base::pop_bulk(out, max_count);
+  }
+
+  // ==================== 状态查询（继承）====================
+
+  using Base::empty;
+  using Base::full;
+  using Base::size_approx;
+  using Base::capacity;
+
+  // ==================== 生命周期 ====================
+
+  void stop() noexcept
+  {
+    stopped_.store(true, std::memory_order_relaxed);
+    cv_.notify_all();
+  }
+
+private:
+  // ✅ Consumer-only 同步原语
+  // 与 SPSCQueue 内部原子变量物理隔离
+  alignas(64) std::mutex mutex_;
+  std::condition_variable cv_;
+  std::atomic<bool> stopped_{false};
+};
+
+
 }  // namespace realtime_common

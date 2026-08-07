@@ -232,28 +232,37 @@ void IOqueue::read_io_thread()
 
 void IOqueue::read_queue_to_rosTopic()
 {
+  std::vector<QueueSlot> batch;
+  batch.reserve(read_queue_.capacity());
+
   using clock = std::chrono::steady_clock;
   auto next_cycle = clock::now();
   const auto period = std::chrono::microseconds(static_cast<int64_t>(2 * 1000)); // 2ms 发布周期
 
   while (running_) {
     main_interface::msg::ByteRows ros_msg;
-    QueueSlot slot;
+    batch.clear();
 
-    // 批量出队，QueueSlot → ByteRow
-    while (read_queue_.pop(slot)) {
+    // 批量阻塞出队：等到至少一条数据，一次性排空
+    std::size_t count = read_queue_.pop_batch(std::back_inserter(batch), read_queue_.capacity());
+    if (count == 0) {
+      break;  // 队列已停止
+    }
+
+    // 批量转换 QueueSlot → ByteRow
+    ros_msg.rows.reserve(count);
+    for (auto& slot : batch) {
       main_interface::msg::ByteRow row;
       row.data.assign(slot.data.begin(), slot.data.begin() + slot.size);
       ros_msg.rows.push_back(std::move(row));
     }
-    
-    if (!ros_msg.rows.empty()) {
-      read_pub_->publish(ros_msg);
-    }
+
+    read_pub_->publish(ros_msg);
 
     next_cycle = clock::now();
     next_cycle += period;
     std::this_thread::sleep_until(next_cycle);
+  
   }
 }
 
@@ -264,37 +273,32 @@ void IOqueue::write_io_thread()
   auto next_cycle = clock::now();
   const auto period = std::chrono::microseconds(static_cast<int64_t>(io_period_ms_write * 1000));
   
+  std::vector<QueueSlot> batch;
+  batch.reserve(write_queue_.capacity());
+
   main_interface::msg::ByteRow cmd_data;
-  
+
   while (running_) {
-    auto start = clock::now();
-    
-    // 1. 从队列取命令（非阻塞）
-    QueueSlot slot;
-    if (write_queue_.pop(slot)) {
-      // QueueSlot → ByteRow
+    batch.clear();
+
+    // 1. 批量阻塞等待命令
+    std::size_t count = write_queue_.pop_batch(std::back_inserter(batch), write_queue_.capacity());
+    if (count == 0) {
+      break;  // 队列已停止
+    }
+
+    // 2. 逐条写入硬件 IO
+    for (auto& slot : batch) {
       cmd_data.data.assign(slot.data.begin(), slot.data.begin() + slot.size);
 
-      // 2. 写入硬件 IO（非阻塞，最坏情况 < 300μs）
       if (!write_hardware(cmd_data)) {
         RCLCPP_WARN_THROTTLE(get_logger(), *get_clock(), 1000,
                              "Hardware write failed");
       }
-      
+
       write_count_++;
     }
-    
-    // // 3. 检查抖动
-    // auto end = clock::now();
-    // auto duration = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-    // auto expected = static_cast<int64_t>(io_period_ms_write * 1000);
-    // int64_t jitter = abs(duration - expected);
-    
-    // int64_t old_max = max_write_jitter_us_.load();
-    // while (old_max < jitter && 
-    //        !max_write_jitter_us_.compare_exchange_weak(old_max, jitter));
-    
-    // 4. 精确周期等待
+
     next_cycle = clock::now();
     next_cycle += period;
     std::this_thread::sleep_until(next_cycle);

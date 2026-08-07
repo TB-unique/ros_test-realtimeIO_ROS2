@@ -267,4 +267,162 @@ private:
   alignas(CACHE_LINE) Slot slots_[Capacity];
 };
 
+/**
+ * @brief 阻塞式 SPSC 环形缓冲区（继承版）
+ *
+ * 行为约定：
+ * ┌────────────┬──────────────────────────────┐
+ * │ Producer   │ try_emplace / try_push       │
+ * │            │ → 无锁、非阻塞、满即丢       │
+ * ├────────────┼──────────────────────────────┤
+ * │ Consumer   │ pop / pop_batch              │
+ * │            │ → 阻塞等待、主动让出 CPU      │
+ * └────────────┴──────────────────────────────┘
+ *
+ * ✅ 适用于 RT 线程 → ROS / UI / Log 线程
+ */
+template<typename T, std::size_t Capacity>
+class BlockingSPSCRingBuffer final
+  : private SPSCRingBuffer<T, Capacity>
+{
+public:
+  using Base = SPSCRingBuffer<T, Capacity>;
+
+  BlockingSPSCRingBuffer() noexcept = default;
+
+  ~BlockingSPSCRingBuffer() noexcept
+  {
+    stop();
+  }
+
+  // ==================== Producer API（无锁 + 条件通知）====================
+
+  /**
+   * @brief 入队（非阻塞），成功后通知阻塞的消费者
+   * @return true 成功，false 队列满（主动丢数）
+   *
+   * ✅ 可在硬实时线程中调用（notify_one 无需持锁）
+   */
+  bool try_push(const T& value) noexcept
+  {
+    bool ok = Base::try_push(value);
+    if (ok) {
+      cv_.notify_one();
+    }
+    return ok;
+  }
+
+  template<typename... Args>
+  bool try_emplace(Args&&... args) noexcept
+  {
+    bool ok = Base::try_emplace(std::forward<Args>(args)...);
+    if (ok) {
+      cv_.notify_one();
+    }
+    return ok;
+  }
+
+  // ==================== Consumer API（阻塞）====================
+
+  /**
+   * @brief 出队（阻塞）
+   * @return true 成功取出数据, false 队列已停止
+   *
+   * ❌ 禁止在 RT 线程中调用
+   */
+  bool pop(T& out)
+  {
+    std::unique_lock<std::mutex> lock(mutex_);
+
+    cv_.wait(lock, [this]() {
+      return stopped_.load(std::memory_order_relaxed) ||
+             !Base::empty();
+    });
+
+    if (stopped_) {
+      return false;
+    }
+
+    return Base::try_pop(out);
+  }
+
+  /**
+   * @brief 非阻塞出队
+   */
+  using Base::try_pop;
+
+  /**
+   * @brief 查看但不移除（阻塞直到有数据）
+   */
+  T* peek()
+  {
+    std::unique_lock<std::mutex> lock(mutex_);
+
+    cv_.wait(lock, [this]() {
+      return stopped_.load(std::memory_order_relaxed) ||
+             !Base::empty();
+    });
+
+    if (stopped_) {
+      return nullptr;
+    }
+
+    return Base::peek();
+  }
+
+  /**
+   * @brief 完成 peek 后的消费
+   */
+  void pop_finish()
+  {
+    std::lock_guard<std::mutex> lock(mutex_);
+    Base::pop_finish();
+  }
+
+  /**
+   * @brief 批量消费（强烈推荐）
+   */
+  template<typename OutputIterator>
+  std::size_t pop_batch(OutputIterator out, std::size_t max_count)
+  {
+    std::unique_lock<std::mutex> lock(mutex_);
+
+    cv_.wait(lock, [this]() {
+      return stopped_.load(std::memory_order_relaxed) ||
+             !Base::empty();
+    });
+
+    if (stopped_) {
+      return 0;
+    }
+
+    return Base::pop_batch(out, max_count);
+  }
+
+  // ==================== 状态查询（继承）====================
+
+  using Base::empty;
+  using Base::full;
+  using Base::size_approx;
+  using Base::capacity;
+
+  // ==================== 生命周期 ====================
+
+  /**
+   * @brief 停止并唤醒阻塞的 Consumer
+   */
+  void stop() noexcept
+  {
+    stopped_.store(true, std::memory_order_relaxed);
+    cv_.notify_all();
+  }
+
+private:
+  // ✅ Consumer-only 同步原语
+  // 单独 Cache Line，避免污染 Producer 路径
+  alignas(64) std::mutex mutex_;
+  std::condition_variable cv_;
+  std::atomic<bool> stopped_{false};
+};
+
 }  // namespace realtime_common

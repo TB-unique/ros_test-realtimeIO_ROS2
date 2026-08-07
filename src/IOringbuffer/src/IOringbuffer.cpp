@@ -220,21 +220,28 @@ void IOringbuffer::read_ringbuffer_to_rosTopic()
   using clock = std::chrono::steady_clock;
   auto next_cycle = clock::now();
   const auto period = std::chrono::microseconds(static_cast<int64_t>(2 * 1000)); // 2ms 发布周期
+  
+  std::vector<RingBufferSlot> batch;
+  batch.reserve(read_ringbuffer_.capacity());
 
   while (running_) {
     main_interface::msg::ByteRow ros_msg;
-    RingBufferSlot slot;
+    batch.clear();
 
-    // 批量出队并拼接后发布
-    while (read_ringbuffer_.try_pop(slot)) {
+    // 批量阻塞出队：等到至少一条数据，一次性排空
+    std::size_t count = read_ringbuffer_.pop_batch(std::back_inserter(batch), read_ringbuffer_.capacity());
+    if (count == 0) {
+      break;  // 队列已停止
+    }
+
+    // 批量拼接 RingBufferSlot → ByteRow
+    for (auto& slot : batch) {
       ros_msg.data.insert(ros_msg.data.end(),
                           slot.data.begin(),
                           slot.data.begin() + slot.size);
     }
 
-    if (!ros_msg.data.empty()) {
-      read_pub_->publish(std::move(ros_msg));
-    }
+    read_pub_->publish(std::move(ros_msg));
 
     next_cycle = clock::now();
     next_cycle += period;
@@ -248,11 +255,20 @@ void IOringbuffer::write_io_thread()
   auto next_cycle = clock::now();
   const auto period = std::chrono::microseconds(static_cast<int64_t>(io_period_ms_write_ * 1000));
 
-  RingBufferSlot slot;
+  std::vector<RingBufferSlot> batch;
+  batch.reserve(write_ringbuffer_.capacity());
+
   while (running_) {
-    // 从环形缓冲区读取数据
-    if (write_ringbuffer_.try_pop(slot)) {
-      // RingBufferSlot → ByteRow
+    batch.clear();
+
+    // 1. 批量阻塞等待命令
+    std::size_t count = write_ringbuffer_.pop_batch(std::back_inserter(batch), write_ringbuffer_.capacity());
+    if (count == 0) {
+      break;  // 队列已停止
+    }
+
+    // 2. 逐条写入硬件 IO
+    for (auto& slot : batch) {
       main_interface::msg::ByteRow write_data;
       write_data.data.assign(slot.data.begin(), slot.data.begin() + slot.size);
 
